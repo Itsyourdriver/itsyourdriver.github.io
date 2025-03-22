@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Socials on itsyourdriver.xyz</title>
+    <link>https://itsyourdriver.github.io/socials/</link>
+    <description>Recent content in Socials on itsyourdriver.xyz</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>contact@driver.fyi (Itsyourdriver)</managingEditor>
+    <webMaster>contact@driver.fyi (Itsyourdriver)</webMaster>
+    <copyright>© 2025 Itsyourdriver</copyright>
+    <atom:link href="https://itsyourdriver.github.io/socials/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

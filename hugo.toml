@@ -20,7 +20,7 @@ copyright = '© 2025 Itsyourdriver'
   contentTypeName = "posts"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 3
 
   # show selector to switch language
   showLanguageSelector = false
@@ -77,7 +77,7 @@ copyright = '© 2025 Itsyourdriver'
   # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
   # do not include @
   creator = "itsyourdriver_"
-  site = ""
+  site = "https://x.com/itsyourdriver_"
 
 [languages]
   [languages.en]
@@ -85,10 +85,10 @@ copyright = '© 2025 Itsyourdriver'
     title = "itsyourdriver.xyz"
 
     [languages.en.params]
-      subtitle = "A simple, retro theme for Hugo"
-      owner = ""
-      keywords = ""
-      copyright = ""
+      subtitle = "I’m Itsyourdriver, an indie game developer from the United States. I also happen to make videos on a site you might have heard of already. (yes, YouTube)"
+      owner = "Itsyourdriver"
+      keywords = "itsyourdriver.xyz"
+      copyright = "Itsyourdriver"
       menuMore = "Show more"
       readMore = "Read more"
       readOtherPosts = "Read other posts"
@@ -112,6 +112,14 @@ copyright = '© 2025 Itsyourdriver'
           identifier = "about"
           name = "About Me"
           url = "/about"
+        [[languages.en.menu.main]]
+          identifier = "socials"
+          name = "Socials/Contact"
+          url = "/socials"
+        [[languages.en.menu.main]]
+          identifier = "tags"
+          name = "Tags"
+          url = "/tags"
 
 [services]
   [services.rss]
