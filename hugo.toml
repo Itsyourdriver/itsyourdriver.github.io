@@ -2,10 +2,17 @@ baseURL = 'https://itsyourdriver.github.io'
 languageCode = 'en-us'
 title = 'Itsyourdriver'
 theme = "terminal"
+copyright = '© 2025 Itsyourdriver'
 
 # Required for Chroma and the custom syntax highlighting.
 [markup.highlight]
   noClasses = false
+
+[outputs]
+  home = ['html', 'rss']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
 
 [params]
   # dir name of your main content (default is `content/posts`).
@@ -61,6 +68,9 @@ theme = "terminal"
   # Example format, with date, time, and timezone abbreviation:
   # dateFormat = "2006-01-02 3:04:06 PM MST"
 
+  [params.author]
+    email = 'contact@driver.fyi'
+    name = 'Itsyourdriver'
 
 [params.twitter]
   # set Twitter handles for Twitter cards
@@ -99,6 +109,10 @@ theme = "terminal"
           name = "Posts"
           url = "/posts"
         [[languages.en.menu.main]]
-          identifier = "showcase"
-          name = "Showcase"
-          url = "/stuff"
+          identifier = "about"
+          name = "About Me"
+          url = "/about"
+
+[services]
+  [services.rss]
+    limit = 15

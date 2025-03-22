@@ -2,17 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on itsyourdriver.xyz</title>
-    <link>https://itsyourdriver.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on itsyourdriver.xyz</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <managingEditor>contact@driver.fyi (Itsyourdriver)</managingEditor>
+    <webMaster>contact@driver.fyi (Itsyourdriver)</webMaster>
+    <copyright>© 2025 Itsyourdriver</copyright>
     <lastBuildDate>Fri, 21 Mar 2025 20:57:42 -0700</lastBuildDate>
-    <atom:link href="https://itsyourdriver.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testing</title>
-      <link>https://itsyourdriver.github.io/posts/testing/</link>
-      <pubDate>Fri, 21 Mar 2025 20:57:42 -0700</pubDate>
-      <guid>https://itsyourdriver.github.io/posts/testing/</guid>
+      <link>http://localhost:1313/posts/testing/</link>
+      <pubDate>Fri, 21 Mar 2025 20:57:42 -0700</pubDate><author>contact@driver.fyi (Itsyourdriver)</author>
+      <guid>http://localhost:1313/posts/testing/</guid>
       <description>&lt;p&gt;ayo?&lt;/p&gt;&#xA;&lt;h1 id=&#34;are-we-in&#34;&gt;Are we in?&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Yes?&lt;/strong&gt;&#xA;&lt;em&gt;Or no?&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
