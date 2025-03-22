@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   
-    <title>Testing :: itsyourdriver.xyz</title>
+    <title>First Post: My Experience with Crowdsec :: itsyourdriver.xyz</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="ayo?
-Are we in? Yes? Or no?
+<meta name="description" content="I recently rebuilt my homelab setup, and with it, I decided to install CrowdSec on my machines. For the uninformed, Crowdsec is a &ldquo;a behavioral solution that detects and blocks malicious IPs based on their behavior. It offers a Security Engine, a Console, a Remediation Component, and an AppSec Component for infrastructure and application security.&rdquo;
+I signed up, and started with the free tier. I got my servers registered in their console as &ldquo;engines&rdquo;, and setup a remediation component. Specifically the firewall one, as I felt it would be fine for my usecase. The first thing that I noticed was that on the free tier, you are limited to just three free blocklists per account, without a paid subscription. Not a huge deal, I can understand the majority of paid plans, althoughs some people may believe that $31 per &ldquo;security engine&rdquo; each month is a little absurd for most people, however you have to consider that this is for companies, not individuals. (this is the enterprise plan)
 " />
-<meta name="keywords" content=", " />
+<meta name="keywords" content="crowdsec, linux, firewall, security, cybersecurity" />
 
   <meta name="robots" content="noodp" />
 
@@ -79,9 +79,9 @@ Are we in? Yes? Or no?
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Testing">
-<meta property="og:description" content="ayo?
-Are we in? Yes? Or no?
+<meta property="og:title" content="First Post: My Experience with Crowdsec">
+<meta property="og:description" content="I recently rebuilt my homelab setup, and with it, I decided to install CrowdSec on my machines. For the uninformed, Crowdsec is a &ldquo;a behavioral solution that detects and blocks malicious IPs based on their behavior. It offers a Security Engine, a Console, a Remediation Component, and an AppSec Component for infrastructure and application security.&rdquo;
+I signed up, and started with the free tier. I got my servers registered in their console as &ldquo;engines&rdquo;, and setup a remediation component. Specifically the firewall one, as I felt it would be fine for my usecase. The first thing that I noticed was that on the free tier, you are limited to just three free blocklists per account, without a paid subscription. Not a huge deal, I can understand the majority of paid plans, althoughs some people may believe that $31 per &ldquo;security engine&rdquo; each month is a little absurd for most people, however you have to consider that this is for companies, not individuals. (this is the enterprise plan)
 " />
 <meta property="og:url" content="https://itsyourdriver.github.io/posts/testing/" />
 <meta property="og:site_name" content="itsyourdriver.xyz" />
@@ -171,16 +171,16 @@ Are we in? Yes? Or no?
     
 <article class="post">
   <h1 class="post-title">
-    <a href="https://itsyourdriver.github.io/posts/testing/">Testing</a>
+    <a href="https://itsyourdriver.github.io/posts/testing/">First Post: My Experience with Crowdsec</a>
   </h1>
-  <div class="post-meta"><time class="post-date">2025-03-21</time><span class="post-author">Itsyourdriver</span></div>
+  <div class="post-meta"><time class="post-date">2025-03-21</time><span class="post-author">Itsyourdriver</span><span class="post-reading-time">4 min read (645 words)</span></div>
 
   
     <span class="post-tags">
       
-      #<a href="https://itsyourdriver.github.io/tags/"></a>&nbsp;
+      #<a href="https://itsyourdriver.github.io/tags/cybersecurity/">cybersecurity</a>&nbsp;
       
-      #<a href="https://itsyourdriver.github.io/tags/"></a>&nbsp;
+      #<a href="https://itsyourdriver.github.io/tags/linux/">linux</a>&nbsp;
       
     </span>
   
@@ -190,10 +190,35 @@ Are we in? Yes? Or no?
   
 
   <div class="post-content"><div>
-        <p>ayo?</p>
-<h1 id="are-we-in">Are we in?<a href="#are-we-in" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<p><strong>Yes?</strong>
-<em>Or no?</em></p>
+        <p>I recently rebuilt my homelab setup, and with it, I decided to install <a href="https://crowdsec.net">CrowdSec</a> on my machines. For the uninformed, Crowdsec is a &ldquo;a behavioral solution that detects and blocks malicious IPs based on their behavior. It offers a Security Engine, a Console, a Remediation Component, and an AppSec Component for infrastructure and application security.&rdquo;</p>
+<p>I signed up, and started with the free tier. I got my servers registered in their console as &ldquo;engines&rdquo;, and setup a remediation component. Specifically the firewall one, as I felt it would be fine for my usecase. The first thing that I noticed was that on the free tier, you are limited to just three <strong>free</strong> blocklists per account, without a <a href="https://www.crowdsec.net/pricing#saas-enterprise">paid subscription</a>. Not a huge deal, I can understand the majority of paid plans, althoughs some people may believe that $31 per &ldquo;security engine&rdquo; each month is a little absurd for most people, however you have to consider that this is for companies, not individuals. (this is the enterprise plan)</p>
+<!-- raw HTML omitted -->
+<p><img src="/images/my_experience_with_crowdsec/enterprise.png" alt="CrowdSec’s paid plan"></p>
+<!-- raw HTML omitted -->
+<p>The three blocklist limit does suck, however you can always use a different application/firewall to block ips on lists from places such as <a href="https://www.blocklist.de/en/index.html">blocklist.de</a>, <a href="https://iplists.firehol.org/">FireHOL</a>, <a href="https://ipthreat.net/lists">or IpThreat</a>.</p>
+<p>I&rsquo;m not going to get into the ways to do that here, as this focuses on CrowdSec specifically.
+Up to this point, I hadn&rsquo;t gotten any alerts, it was all quiet. This is more than likely a good? thing, however the real fun with CrowdSec came after I installed &amp; set it up on a VPS that I have.</p>
+<p>As of now it&rsquo;s gotten 249 alerts, and the day that I put it on I swapped out <a href="https://github.com/fail2ban/fail2ban">Fail2Ban</a> with CrowdSec, as CrowdSec prevents SSH bruteforce. If I need it to monitor logs for my applications, then it will be coming back for sure, but I was only using it for SSH login attempts.</p>
+<p>I&rsquo;m not sure if I&rsquo;m the only one, but I find it quite satisfying seeing everything that&rsquo;s been blocked. It&rsquo;s also a little spooky but fun at the same time, kinda like seeing this one bot that keeps attempting to connect to something I have behind cloudflare about 3-5 times a minute, approx. every three minutes. It keeps getting served a managed challenge, and had done about 450+ requests in under a day.</p>
+<p>Back on topic, It also happens to do a lot more than just SSH Bruteforce, it also blocks requests attempting to abuse different vulnerabilities (not a huge issue if your servers are patched up, but it is nice to have)</p>
+<h2 id="on-the-topic-of-ssh-bruteforcing-should-you-swap-this-with-fail2ban">On the topic of SSH Bruteforcing, should you swap this with Fail2Ban?<a href="#on-the-topic-of-ssh-bruteforcing-should-you-swap-this-with-fail2ban" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p><em>It depends.</em> If you use Fail2ban for more than just SSH, then keep it, you can add CrowdSec to stand in for the SSH protection that Fail2Ban comes with.</p>
+<p><img src="/images/my_experience_with_crowdsec/list.png" alt="Silly Alerts"></p>
+<p>This to me is quite nice, the VPS it&rsquo;s running on is quite small in terms of the resources it has, and as such it needs all the help it can get.</p>
+<p>CrowdSec does use a noticeable bit of memory in the background if I can recall of the top of my head, but it&rsquo;s only signifigant if your machine/VPS doesn&rsquo;t have much RAM.</p>
+<p>CrowdSec supports many other Remediation Components/Bouncers (basically what actually blocks traffic) besides just at the firewall level.</p>
+<p><img src="/images/my_experience_with_crowdsec/components.png" alt="The List">
+<em>(There are also many other bouncers available for other applications, services, and proxies)</em></p>
+<p>The way each component works is different, on their documentation they say:</p>
+<blockquote>
+<ul>
+<li>nginx will check requester IP against the local API before granting or denying access.</li>
+<li>firewall will add IPs to nftables/ipset set.</li>
+<li>cloudflare will add IPs to the Cloudflare firewall.</li>
+<li>blocklist will serve the blocklist to a appliance such as pfsense, fortinet, untangle via a http server.</li>
+</ul></blockquote>
+<p>In Conclusion, what is my overall opinion on CrowdSec?</p>
+<p>It&rsquo;s decent. I do think that it is a decent service, especially so for enterprise customers (if all of their claims are true)</p>
 
       </div></div>
 
@@ -201,9 +226,6 @@ Are we in? Yes? Or no?
     
 
   
-
-  
-    
 
   
 </article>
