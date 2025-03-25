@@ -10,11 +10,11 @@
     <lastBuildDate>Fri, 21 Mar 2025 20:57:42 -0700</lastBuildDate>
     <atom:link href="https://itsyourdriver.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First Post: My Experience with Crowdsec</title>
+      <title>First Post: My Experience with CrowdSec</title>
       <link>https://itsyourdriver.github.io/posts/my-experience-with-crowdsec/</link>
       <pubDate>Fri, 21 Mar 2025 20:57:42 -0700</pubDate>
       <guid>https://itsyourdriver.github.io/posts/my-experience-with-crowdsec/</guid>
-      <description>&lt;p&gt;I recently rebuilt my homelab setup, and with it, I decided to install &lt;a href=&#34;https://crowdsec.net&#34;&gt;CrowdSec&lt;/a&gt; on my machines. For the uninformed, Crowdsec is a &amp;ldquo;a behavioral solution that detects and blocks malicious IPs based on their behavior. It offers a Security Engine, a Console, a Remediation Component, and an AppSec Component for infrastructure and application security.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;I signed up, and started with the free tier. I got my servers registered in their console as &amp;ldquo;engines&amp;rdquo;, and setup a remediation component. Specifically the firewall one, as I felt it would be fine for my usecase. The first thing that I noticed was that on the free tier, you are limited to just three &lt;strong&gt;free&lt;/strong&gt; blocklists per account, without a &lt;a href=&#34;https://www.crowdsec.net/pricing#saas-enterprise&#34;&gt;paid subscription&lt;/a&gt;. Not a huge deal, I can understand the majority of paid plans, althoughs some people may believe that $31 per &amp;ldquo;security engine&amp;rdquo; each month is a little absurd for most people, however you have to consider that this is for companies, not individuals. (this is the enterprise plan)&lt;/p&gt;</description>
+      <description>&lt;p&gt;I recently rebuilt my homelab setup, and with it, I decided to install &lt;a href=&#34;https://crowdsec.net&#34;&gt;CrowdSec&lt;/a&gt; on my machines. For the uninformed, Crowdsec is &amp;ldquo;a behavioral solution that detects and blocks malicious IPs based on their behavior. It offers a Security Engine, a Console, a Remediation Component, and an AppSec Component for infrastructure and application security.&amp;rdquo;&#xA;It basically offers an advanced firewall (you&amp;rsquo;d want to keep UFW or whatever you&amp;rsquo;re using), detections for different vulnerabilities, SSH Brute force, http probing, etc, and frequently updated ip blocklists.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
