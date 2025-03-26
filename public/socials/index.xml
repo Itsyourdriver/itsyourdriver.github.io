@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Socials on itsyourdriver.xyz</title>
-    <link>https://itsyourdriver.github.io/socials/</link>
+    <link>https://itsyourdriver.xyz/socials/</link>
     <description>Recent content in Socials on itsyourdriver.xyz</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2025 Itsyourdriver</copyright>
-    <atom:link href="https://itsyourdriver.github.io/socials/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://itsyourdriver.xyz/socials/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

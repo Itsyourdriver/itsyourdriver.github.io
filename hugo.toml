@@ -1,4 +1,4 @@
-baseURL = 'https://itsyourdriver.github.io'
+baseURL = 'https://itsyourdriver.xyz'
 languageCode = 'en-us'
 title = 'Itsyourdriver'
 theme = "terminal"
@@ -128,4 +128,4 @@ copyright = '© 2025 Itsyourdriver'
 
 [services]
   [services.rss]
-    limit = 5
+    limit = 10

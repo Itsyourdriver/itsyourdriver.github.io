@@ -2,39 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://itsyourdriver.github.io/tags/cybersecurity/</loc>
+    <loc>https://itsyourdriver.xyz/</loc>
+    <lastmod>2025-03-25T14:06:02-07:00</lastmod>
+  </url><url>
+    <loc>https://itsyourdriver.xyz/reviews/</loc>
+    <lastmod>2025-03-25T14:06:02-07:00</lastmod>
+  </url><url>
+    <loc>https://itsyourdriver.xyz/tags/cybersecurity/</loc>
     <lastmod>2025-03-21T20:57:42-07:00</lastmod>
   </url><url>
-    <loc>https://itsyourdriver.github.io/posts/my-experience-with-crowdsec/</loc>
+    <loc>https://itsyourdriver.xyz/posts/my-experience-with-crowdsec/</loc>
     <lastmod>2025-03-21T20:57:42-07:00</lastmod>
   </url><url>
-    <loc>https://itsyourdriver.github.io/</loc>
+    <loc>https://itsyourdriver.xyz/tags/linux/</loc>
     <lastmod>2025-03-21T20:57:42-07:00</lastmod>
   </url><url>
-    <loc>https://itsyourdriver.github.io/tags/linux/</loc>
+    <loc>https://itsyourdriver.xyz/tags/opinion/</loc>
     <lastmod>2025-03-21T20:57:42-07:00</lastmod>
   </url><url>
-    <loc>https://itsyourdriver.github.io/tags/opinion/</loc>
+    <loc>https://itsyourdriver.xyz/tags/overview/</loc>
     <lastmod>2025-03-21T20:57:42-07:00</lastmod>
   </url><url>
-    <loc>https://itsyourdriver.github.io/tags/overview/</loc>
+    <loc>https://itsyourdriver.xyz/posts/</loc>
     <lastmod>2025-03-21T20:57:42-07:00</lastmod>
   </url><url>
-    <loc>https://itsyourdriver.github.io/posts/</loc>
+    <loc>https://itsyourdriver.xyz/tags/review/</loc>
     <lastmod>2025-03-21T20:57:42-07:00</lastmod>
   </url><url>
-    <loc>https://itsyourdriver.github.io/tags/review/</loc>
+    <loc>https://itsyourdriver.xyz/tags/</loc>
     <lastmod>2025-03-21T20:57:42-07:00</lastmod>
   </url><url>
-    <loc>https://itsyourdriver.github.io/tags/</loc>
-    <lastmod>2025-03-21T20:57:42-07:00</lastmod>
+    <loc>https://itsyourdriver.xyz/about/</loc>
   </url><url>
-    <loc>https://itsyourdriver.github.io/about/</loc>
+    <loc>https://itsyourdriver.xyz/categories/</loc>
   </url><url>
-    <loc>https://itsyourdriver.github.io/categories/</loc>
+    <loc>https://itsyourdriver.xyz/datapacks/</loc>
   </url><url>
-    <loc>https://itsyourdriver.github.io/datapacks/</loc>
-  </url><url>
-    <loc>https://itsyourdriver.github.io/socials/</loc>
+    <loc>https://itsyourdriver.xyz/socials/</loc>
   </url>
 </urlset>

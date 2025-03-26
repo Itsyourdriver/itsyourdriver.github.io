@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on itsyourdriver.xyz</title>
-    <link>https://itsyourdriver.github.io/posts/</link>
+    <link>https://itsyourdriver.xyz/posts/</link>
     <description>Recent content in Posts on itsyourdriver.xyz</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2025 Itsyourdriver</copyright>
     <lastBuildDate>Fri, 21 Mar 2025 20:57:42 -0700</lastBuildDate>
-    <atom:link href="https://itsyourdriver.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://itsyourdriver.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Post: My Experience with CrowdSec</title>
-      <link>https://itsyourdriver.github.io/posts/my-experience-with-crowdsec/</link>
+      <link>https://itsyourdriver.xyz/posts/my-experience-with-crowdsec/</link>
       <pubDate>Fri, 21 Mar 2025 20:57:42 -0700</pubDate>
-      <guid>https://itsyourdriver.github.io/posts/my-experience-with-crowdsec/</guid>
+      <guid>https://itsyourdriver.xyz/posts/my-experience-with-crowdsec/</guid>
       <description>&lt;p&gt;I recently rebuilt my homelab setup, and with it, I decided to install &lt;a href=&#34;https://crowdsec.net&#34;&gt;CrowdSec&lt;/a&gt; on my machines. For the uninformed, Crowdsec is &amp;ldquo;a behavioral solution that detects and blocks malicious IPs based on their behavior. It offers a Security Engine, a Console, a Remediation Component, and an AppSec Component for infrastructure and application security.&amp;rdquo;&#xA;It basically offers an advanced firewall (you&amp;rsquo;d want to keep UFW or whatever you&amp;rsquo;re using), detections for different vulnerabilities, SSH Brute force, http probing, etc, and frequently updated ip blocklists.&lt;/p&gt;</description>
     </item>
   </channel>
