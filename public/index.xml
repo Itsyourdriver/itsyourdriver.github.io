@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2025 Itsyourdriver</copyright>
-    <lastBuildDate>Fri, 21 Mar 2025 20:57:42 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 10 Apr 2025 17:35:07 -0700</lastBuildDate>
     <atom:link href="https://itsyourdriver.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I Downgraded My Nvidia Drivers</title>
+      <link>https://itsyourdriver.xyz/posts/i-downgraded-my-nvidia-drivers/</link>
+      <pubDate>Thu, 10 Apr 2025 17:35:07 -0700</pubDate>
+      <guid>https://itsyourdriver.xyz/posts/i-downgraded-my-nvidia-drivers/</guid>
+      <description>&lt;p&gt;This is going to be a short post from me, I just wanted to post about this because it was quite annoying.&#xA;As some of you may know, &lt;a href=&#34;https://www.youtube.com/watch?v=NTXoUsdSAnA&#34;&gt;NVIDIA happens to be going through a very rough time with their GPU drivers&lt;/a&gt;, with it being compared to AMD&amp;rsquo;s previous problems with theirs.&lt;/p&gt;&#xA;&lt;p&gt;I finally had the time recently to hop on VR to do some simracing, and since I hadn&amp;rsquo;t been on my rig / headset in a while, I had to update everything, no big deal right? Well, think again. I had updated my GPU drivers a few weeks ago to one of the 572.x versions, and everything seemed fine, although I had some issues with weird artifacts on text and UI elements in certain games (mainly ready or not, some browser tabs even). So, as I updated my VR headset (a quest 2)&amp;rsquo;s drivers, my displays flashed black, no big deal right? Maybe it&amp;rsquo;s just doing something that it needs to do, right? I mean it hasn&amp;rsquo;t done it before but it&amp;rsquo;s been months since I updated. Well, no. After about 1-2 more times, it just stayed black. I immediately knew what the problem was, rebooted windows. Luckily, I was able to boot back without problem, and I immediately started by downloading a new version of DDU, and downloading the installer for the last &amp;ldquo;stable&amp;rdquo; nvidia driver 566.36.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>First Post: My Experience with CrowdSec</title>
       <link>https://itsyourdriver.xyz/posts/my-experience-with-crowdsec/</link>
