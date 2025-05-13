@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2025 Itsyourdriver</copyright>
-    <lastBuildDate>Thu, 10 Apr 2025 17:35:07 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 12 May 2025 18:19:54 -0700</lastBuildDate>
     <atom:link href="https://itsyourdriver.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Setup Codeberg&#39;s Pages Server using Docker Compose &amp; Forgejo</title>
+      <link>https://itsyourdriver.xyz/posts/how-to-setup-codeberg-pages/</link>
+      <pubDate>Mon, 12 May 2025 18:19:54 -0700</pubDate>
+      <guid>https://itsyourdriver.xyz/posts/how-to-setup-codeberg-pages/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re like me and deploy/upkeep static sites (this one included) semi-regularly using a generator such as hugo or another, you may have found that there are a few options for hosting said static sites. Whether that&amp;rsquo;s github (where this site is hosted), codeberg (which occasionally has uptime issues), cloudflare pages, statichost.eu, or even sourcehut pages. There are a lot of options. Now what if you could host your static pages, yourself? Well, that&amp;rsquo;s what we&amp;rsquo;re going to do today.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>I Downgraded My Nvidia Drivers</title>
       <link>https://itsyourdriver.xyz/posts/i-downgraded-my-nvidia-drivers/</link>
@@ -21,7 +28,7 @@
       <link>https://itsyourdriver.xyz/posts/my-experience-with-crowdsec/</link>
       <pubDate>Fri, 21 Mar 2025 20:57:42 -0700</pubDate>
       <guid>https://itsyourdriver.xyz/posts/my-experience-with-crowdsec/</guid>
-      <description>&lt;p&gt;I recently rebuilt my homelab setup, and with it, I decided to install &lt;a href=&#34;https://crowdsec.net&#34;&gt;CrowdSec&lt;/a&gt; on my machines. For the uninformed, Crowdsec is &amp;ldquo;a behavioral solution that detects and blocks malicious IPs based on their behavior. It offers a Security Engine, a Console, a Remediation Component, and an AppSec Component for infrastructure and application security.&amp;rdquo;&#xA;It basically offers an advanced firewall (you&amp;rsquo;d want to keep UFW or whatever you&amp;rsquo;re using), detections for different vulnerabilities, SSH Brute force, http probing, etc, and frequently updated ip blocklists.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;update-i-have-written-a-follow-up-to-this-post-with-my-updated-opinion-new-setup--some-cool-scripts--fun-little-things-you-can-do&#34;&gt;Update: I have written a follow-up to this post with my updated opinion, new setup &amp;amp; some cool scripts &amp;amp; fun little things you can do.&lt;/h2&gt;&#xA;&lt;p&gt;I recently rebuilt my homelab setup, and with it, I decided to install &lt;a href=&#34;https://crowdsec.net&#34;&gt;CrowdSec&lt;/a&gt; on my machines. For the uninformed, Crowdsec is &amp;ldquo;a behavioral solution that detects and blocks malicious IPs based on their behavior. It offers a Security Engine, a Console, a Remediation Component, and an AppSec Component for infrastructure and application security.&amp;rdquo;&#xA;It basically offers an advanced firewall (you&amp;rsquo;d want to keep UFW or whatever you&amp;rsquo;re using), detections for different vulnerabilities, SSH Brute force, http probing, etc, and frequently updated ip blocklists.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

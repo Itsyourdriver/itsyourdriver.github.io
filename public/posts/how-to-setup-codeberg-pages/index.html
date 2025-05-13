@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>How to Setup Codeberg&#39;s Pages Server using Docker Compose &amp; Forgejo :: itsyourdriver.xyz</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This guide goes over how to setup codeberg&#39;s pages-server using docker compose, allowing you to provide static site hosting to your forgejo instance." />
+<meta name="keywords" content="static site hosting, static sites, github pages, github pages alternatives, codeberg pages, cloudflare pages, homelab, docker, tutorial, how to setup codeberg pages server, how to self host static sites" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="https://itsyourdriver.xyz/posts/how-to-setup-codeberg-pages/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="https://itsyourdriver.xyz/css/terminal.min.3bad87d960b0dc7ba0cc355b86787cfd54778b1c16b1c0f6a82f685ee01716f7.css">
+
+  
+  <link rel="stylesheet" href="https://itsyourdriver.xyz/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="https://itsyourdriver.xyz/css/code.min.4f0ccc8439f99bf7f7970298556b94011aabc1fcae743b6842fc3361a2da9ea3.css">
+
+  
+  <link rel="stylesheet" href="https://itsyourdriver.xyz/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="https://itsyourdriver.xyz/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="https://itsyourdriver.xyz/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="https://itsyourdriver.xyz/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="https://itsyourdriver.xyz/css/main.min.15870410d15d02abd22fb5ef00996f65a00d04b3a7435e9f83831c7c2298de88.css">
+
+  
+  <link rel="stylesheet" href="https://itsyourdriver.xyz/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="https://itsyourdriver.xyz/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="https://itsyourdriver.xyz/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="https://itsyourdriver.xyz/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="https://itsyourdriver.xyz/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+<link rel="stylesheet" href="https://itsyourdriver.xyz/terminal.css">
+
+
+
+
+<link rel="shortcut icon" href="https://itsyourdriver.xyz/favicon.png">
+<link rel="apple-touch-icon" href="https://itsyourdriver.xyz/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="https://x.com/itsyourdriver_" />
+  
+    <meta name="twitter:creator" content="itsyourdriver_" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How to Setup Codeberg&#39;s Pages Server using Docker Compose &amp; Forgejo">
+<meta property="og:description" content="This guide goes over how to setup codeberg&#39;s pages-server using docker compose, allowing you to provide static site hosting to your forgejo instance." />
+<meta property="og:url" content="https://itsyourdriver.xyz/posts/how-to-setup-codeberg-pages/" />
+<meta property="og:site_name" content="itsyourdriver.xyz" />
+
+  
+  
+  <meta property="og:image" content="https://itsyourdriver.xyz/">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2025-05-12 18:19:54 -0700 PDT" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container full">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Itsyourdriver
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About Me</a></li>
+        
+      
+        
+          <li><a href="/posts">Posts</a></li>
+        
+      
+        
+          <li><a href="/posts/index.xml">RSS</a></li>
+        
+      
+        
+          <li><a href="/socials">Socials/Contact</a></li>
+        
+      
+        
+          <li><a href="/tags">Tags</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About Me</a></li>
+        
+      
+        
+          <li><a href="/posts" >Posts</a></li>
+        
+      
+        
+          <li><a href="/posts/index.xml" >RSS</a></li>
+        
+      
+        
+          <li><a href="/socials" >Socials/Contact</a></li>
+        
+      
+      
+        <li>
+          <ul class="menu">
+            <li class="menu__trigger">Show more&nbsp;▾</li>
+            <li>
+              <ul class="menu__dropdown">
+                
+                  
+                    <li><a href="/tags" >Tags</a></li>
+                  
+                
+              </ul>
+            </li>
+          </ul>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://itsyourdriver.xyz/posts/how-to-setup-codeberg-pages/">How to Setup Codeberg&rsquo;s Pages Server using Docker Compose &amp; Forgejo</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-05-12</time><span class="post-author">Itsyourdriver</span><span class="post-reading-time">6 min read (1216 words)</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="https://itsyourdriver.xyz/tags/hosting/">hosting</a>&nbsp;
+      
+      #<a href="https://itsyourdriver.xyz/tags/fun-stuff/">fun-stuff</a>&nbsp;
+      
+      #<a href="https://itsyourdriver.xyz/tags/tutorial/">tutorial</a>&nbsp;
+      
+      #<a href="https://itsyourdriver.xyz/tags/ubuntu/">ubuntu</a>&nbsp;
+      
+      #<a href="https://itsyourdriver.xyz/tags/debian/">debian</a>&nbsp;
+      
+      #<a href="https://itsyourdriver.xyz/tags/docker/">docker</a>&nbsp;
+      
+      #<a href="https://itsyourdriver.xyz/tags/homelab/">homelab</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <p>If you&rsquo;re like me and deploy/upkeep static sites (this one included) semi-regularly using a generator such as hugo or another, you may have found that there are a few options for hosting said static sites. Whether that&rsquo;s github (where this site is hosted), codeberg (which occasionally has uptime issues), cloudflare pages, statichost.eu, or even sourcehut pages. There are a lot of options. Now what if you could host your static pages, yourself? Well, that&rsquo;s what we&rsquo;re going to do today.</p>
+<p>I recently bought a domain for this project, but you&rsquo;ll need one which isn&rsquo;t from a dynamic dns service (unless they let you use wildcard domains &amp; are in the list of supported DNS providers <a href="https://go-acme.github.io/lego/dns/#dns-providers">here</a>.</p>
+<blockquote>
+<p>⚠️ This guide doesn&rsquo;t go over how to setup support for custom domains (using a reverse proxy), as I still haven&rsquo;t figured it out yet. If you have (using any reverse proxy), please contact me via any platform that I&rsquo;m active on (incl. matrix.org, @itsyourdriver_)</p>
+<p>This guide is made with my own experience of setting this server up, some practices may be bad or just okay. If something is off, let me know.</p>
+<p><strong>You also need a self-hosted forgejo instance for this guide to work.</strong></p></blockquote>
+<p>For this guide, I&rsquo;ll be using cloudflare as my DNS provider (to initiate certificates), you can use any of the ones listed <a href="https://go-acme.github.io/lego/dns/#dns-providers">here</a></p>
+<p>This guide will be using a VPS, as my homelab already has ports 80,443 used. You can technically use cloudflare tunnels, provided that you don&rsquo;t want custom domain support.</p>
+<p>To start, SSH into your vps and create a new <code>docker-compose.yaml</code> file.</p>
+<p>You should (for organizational purposes) put this into a subfolder, my usual sorting for this is <code>compose/app-name</code>, so in this case: <code>compose/pages-server</code></p>
+<p>We&rsquo;re going to put the following template into it:</p>
+<pre tabindex="0"><code>services:
+  pages-server:
+    image: codeberg.org/codeberg/pages-server:next
+    restart: always
+    container_name: pages-server
+    ports:
+      - 80:80
+      - 443:443
+    environment:
+      - PAGES_DOMAIN=example.com
+      - RAW_DOMAIN=raw.example.com
+      - GITEA_ROOT=https://forgejo.example.com
+      - RAW_INFO_PAGE=https://docs.codeberg.org/codeberg-pages/
+      - ACME_API=https://acme.mock.directory
+      - ACME_ACCEPT_TERMS=true
+      - ACME_EMAIL=noreply@example.email
+      - ENABLE_HTTP_SERVER=false
+      - LOG_LEVEL=trace
+      - DNS_PROVIDER=cloudflare
+      - CLOUDFLARE_DNS_API_TOKEN=
+      - CLOUDFLARE_ZONE_API_TOKEN=
+      - CLOUDFLARE_EMAIL=your.email@example.com
+</code></pre><p>If you plan on setting up a reverse proxy for the server, change the ports used to something else. (such as 81/444)</p>
+<p>Now, we can begin to setup our enviornment variables.</p>
+<p>Next, you need to change <code>&quot;PAGES_DOMAIN&quot;</code> to the provider you want to use, alongside with <code>&quot;RAW_DOMAIN&quot;</code>. The raw domain provides the raw contents of files, so for example, if I had an html file at site.example.com, I could go to site.raw.example.com and see the contents, and yes, you can already get the raw content with your browser via viewing the source.</p>
+<p>You can also mount the entire volume of the container if you&rsquo;d like to edit files such as the templates for error pages, however I chose to just mount what I needed, which is beyond the scope of this tutorial.</p>
+<p>After changing our domains, setup your DNS provider. I&rsquo;m using cloudflare, so I have to go into my profile settings, and create a new API token with the DNS Zone permissions for the domain I&rsquo;m using.</p>
+<p><strong>If the host you are setting this server up on has a static IP address, I recommend setting the &ldquo;trusted IPs&rdquo; for your api token to it&rsquo;s IP address to prevent potential misuse.</strong></p>
+<p>We can then copy the API key (which isn&rsquo;t shown again!) into the <code>&quot;CLOUDFLARE_DNS_API_TOKEN&quot;</code> and <code>&quot;CLOUDFLARE_ZONE_API_TOKEN&quot;</code></p>
+<blockquote>
+<p>⚠️ I highly recommend that you use a .env file instead of putting your variables straight into the docker-compose file.</p>
+<p>As a reminder, this guide simply goes over getting the server up and running as quickly as possible. I will edit it in the future with a guide for the .env</p></blockquote>
+<p>Then, add your cloudflare account&rsquo;s email into the other variable.</p>
+<p>After that, we are indeed ready to start the server.</p>
+<h1 id="please-make-sure-to-properly-forward-ports-443--80-before-we-continue">Please make sure to properly forward ports 443 &amp; 80 before we continue.<a href="#please-make-sure-to-properly-forward-ports-443--80-before-we-continue" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Run the command <code>docker compose up</code>, which will allow us to see the logs of the server. <strong>DO NOT DO THIS YET UNLESS YOU DO NOT WANT TO DO THE FOLLOWING OR THE FOLLOWING DO NOT APPLY</strong></p>
+<h1 id="adding-support-for-private-repositoriesforgejo-instances-that-require-signin-to-view">Adding support for private repositories/forgejo instances that require signin to view.<a href="#adding-support-for-private-repositoriesforgejo-instances-that-require-signin-to-view" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>If needed, we can setup support for login-walled or private repositories. If you are like me and have your forgejo instance set to require sign in, we need to go generate an API token as our admin account.</p>
+<p>Go to your forgejo instance, and go to your account settings (Not the admin menu)</p>
+<p><img src="/images/how_to_setup_codeberg_pages/applications.png" alt="Applications"></p>
+<p>Next, name your token, and click on the dropdown for permissions.</p>
+<p><img src="/images/how_to_setup_codeberg_pages/notyet.png" alt="Name Your Token!!"></p>
+<p>Then, enable the following permissions. To my knowledge these are the only ones required.</p>
+<p><img src="/images/how_to_setup_codeberg_pages/permissions.png" alt="Required permissions"></p>
+<p>Now, click &ldquo;Generate&rdquo; and copy the token it gives you. Paste this into the GITEA_API_TOKEN field.</p>
+<p>If I told you to NOT start the compose stack just yet because you wanted to do this, now you can start it.</p>
+<h1 id="setting-up-a-test-site">Setting up a test site<a href="#setting-up-a-test-site" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Make sure that your DNS provider has a wildcard dns record setup which points to your server (set the subdomain/whatever to &ldquo;*&rdquo;, might not be supported by some DNS providers.</p>
+<p>Next, I&rsquo;m going to create a new repository in my forgejo instance. It can be public/private, private only being supported if you setup your API token from earlier.</p>
+<p>Name it &ldquo;pages&rdquo; and change the main branch&rsquo;s name from &ldquo;main&rdquo; to &ldquo;pages&rdquo;. I&rsquo;m only doing this for simplicity.</p>
+<p>Create a new index.html file inside of the repository for testing, you can write whatever or even just put your website in now for whatever reason, however I chose to just put in a simple &ldquo;Hello world!&rdquo; into the file (yes, you don&rsquo;t need code you can just serve text in html if you want)</p>
+<p>Now, assuming our server is running (docker compose up if you haven&rsquo;t already), we can now navigate to ourforgejousername.ourdomain</p>
+<p>(replace ourforgejousername with your username on your forgejo instance, and ourdomain with your domain from earlier)</p>
+<p>You may get an SSL warning if you didn&rsquo;t setup let&rsquo;s encrypt (we haven&rsquo;t done that yet), so that&rsquo;s fine, ignore it and continue.</p>
+<p>You should now see your html file from earlier.</p>
+<h1 id="setting-up-ssl-with-lets-encrypt">Setting up SSL with Let&rsquo;s Encrypt<a href="#setting-up-ssl-with-lets-encrypt" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>If you want SSL, to, you know, work, here&rsquo;s how we&rsquo;re gonna do it.</p>
+<p>Start by changing &ldquo;ACME_API&rdquo; to the following <code>https://acme-v02.api.letsencrypt.org/directory</code>.
+Change ACME_ACCEPT_TERMS to true if you haven&rsquo;t done that.
+Provide an email that&rsquo;s not invalid (unless you want to, though I believe that breaks let&rsquo;s encrypt&rsquo;s terms)</p>
+<p>If you have your DNS provider setup already too, then this should work right out of the box.</p>
+<p>Take down your server using <code>docker compose down</code></p>
+<p>and now start it up again using <code>docker compose up</code></p>
+<p>We can now make sure that SSL is working (you might get a warning on your first request to the site, if you do, just continue and the next ones should work fine, assuming you changed to let&rsquo;s encrypt.)</p>
+<p>Finally, take it down again, and re-run with the command <code>docker compose up -d</code> to make sure that we can do other things in the os while the server is running.</p>
+<p>There you go, that&rsquo;s the most basic setup of the codeberg-pages server for you. You can obviously tinker more, this is very surface level, you can even skip the part about testing and just go straight for enabling let&rsquo;s encrypt on first startup (which is what I did).</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+    
+    
+      <a href="https://itsyourdriver.xyz/posts/i-downgraded-my-nvidia-drivers/" class="button inline next">
+         [<span class="button__text">I Downgraded My Nvidia Drivers</span>] &gt;
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>© 2025 Itsyourdriver</span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
