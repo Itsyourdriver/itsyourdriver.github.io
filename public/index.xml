@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2025 Itsyourdriver</copyright>
-    <lastBuildDate>Mon, 12 May 2025 18:19:54 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 13 May 2025 15:55:54 -0700</lastBuildDate>
     <atom:link href="https://itsyourdriver.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to setup abuseipdb reporting with CrowdSec</title>
+      <link>https://itsyourdriver.xyz/posts/abuseipdb-crowdsec/</link>
+      <pubDate>Tue, 13 May 2025 15:55:54 -0700</pubDate>
+      <guid>https://itsyourdriver.xyz/posts/abuseipdb-crowdsec/</guid>
+      <description></description>
+    </item>
     <item>
       <title>How to Setup Codeberg&#39;s Pages Server using Docker Compose &amp; Forgejo</title>
       <link>https://itsyourdriver.xyz/posts/how-to-setup-codeberg-pages/</link>
