@@ -2,30 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://itsyourdriver.xyz/tags/abuseipdb/</loc>
-    <lastmod>2025-05-13T15:55:54-07:00</lastmod>
-  </url><url>
-    <loc>https://itsyourdriver.xyz/tags/crowdsec/</loc>
-    <lastmod>2025-05-13T15:55:54-07:00</lastmod>
-  </url><url>
-    <loc>https://itsyourdriver.xyz/posts/abuseipdb-crowdsec/</loc>
-    <lastmod>2025-05-13T15:55:54-07:00</lastmod>
-  </url><url>
-    <loc>https://itsyourdriver.xyz/</loc>
-    <lastmod>2025-05-13T15:55:54-07:00</lastmod>
-  </url><url>
-    <loc>https://itsyourdriver.xyz/tags/kinda-fun-stuff/</loc>
-    <lastmod>2025-05-13T15:55:54-07:00</lastmod>
-  </url><url>
-    <loc>https://itsyourdriver.xyz/posts/</loc>
-    <lastmod>2025-05-13T15:55:54-07:00</lastmod>
-  </url><url>
-    <loc>https://itsyourdriver.xyz/tags/</loc>
-    <lastmod>2025-05-13T15:55:54-07:00</lastmod>
-  </url><url>
-    <loc>https://itsyourdriver.xyz/tags/tutorial/</loc>
-    <lastmod>2025-05-13T15:55:54-07:00</lastmod>
-  </url><url>
     <loc>https://itsyourdriver.xyz/tags/debian/</loc>
     <lastmod>2025-05-12T18:19:54-07:00</lastmod>
   </url><url>
@@ -42,6 +18,18 @@
     <lastmod>2025-05-12T18:19:54-07:00</lastmod>
   </url><url>
     <loc>https://itsyourdriver.xyz/posts/how-to-setup-codeberg-pages/</loc>
+    <lastmod>2025-05-12T18:19:54-07:00</lastmod>
+  </url><url>
+    <loc>https://itsyourdriver.xyz/</loc>
+    <lastmod>2025-05-12T18:19:54-07:00</lastmod>
+  </url><url>
+    <loc>https://itsyourdriver.xyz/posts/</loc>
+    <lastmod>2025-05-12T18:19:54-07:00</lastmod>
+  </url><url>
+    <loc>https://itsyourdriver.xyz/tags/</loc>
+    <lastmod>2025-05-12T18:19:54-07:00</lastmod>
+  </url><url>
+    <loc>https://itsyourdriver.xyz/tags/tutorial/</loc>
     <lastmod>2025-05-12T18:19:54-07:00</lastmod>
   </url><url>
     <loc>https://itsyourdriver.xyz/tags/ubuntu/</loc>
