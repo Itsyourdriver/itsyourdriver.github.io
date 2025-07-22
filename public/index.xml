@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2025 Itsyourdriver</copyright>
-    <lastBuildDate>Mon, 12 May 2025 18:19:54 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 22 Jul 2025 12:46:30 -0700</lastBuildDate>
     <atom:link href="https://itsyourdriver.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An Update/Rant about inactivity &amp; Discussion/Rant about gamedev stuff</title>
+      <link>https://itsyourdriver.xyz/posts/an-update/</link>
+      <pubDate>Tue, 22 Jul 2025 12:46:30 -0700</pubDate>
+      <guid>https://itsyourdriver.xyz/posts/an-update/</guid>
+      <description>&lt;p&gt;Hello howdy hola bonjour! It&amp;rsquo;s been a good few months since I last posted here, and also since I last streamed or posted a video on my channel, and I feel like giving an update on my almost complete radio silence.&lt;/p&gt;&#xA;&lt;p&gt;In this time, I&amp;rsquo;ve been working on getting a grasp on my mental health (this is a consistent battle on my end), all while fighting self-doubt and other things. I&amp;rsquo;ve been away from game development, not just because I needed a break, but because I was overwhelmed. I had put too many projects (3 TOTAL! NOT GOOD AT ALL) into something that I&amp;rsquo;d like to continue doing for the rest of my life, and as such, got overwhelmed quickly.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How to Setup Codeberg&#39;s Pages Server using Docker Compose &amp; Forgejo</title>
       <link>https://itsyourdriver.xyz/posts/how-to-setup-codeberg-pages/</link>
@@ -28,7 +35,7 @@
       <link>https://itsyourdriver.xyz/posts/my-experience-with-crowdsec/</link>
       <pubDate>Fri, 21 Mar 2025 20:57:42 -0700</pubDate>
       <guid>https://itsyourdriver.xyz/posts/my-experience-with-crowdsec/</guid>
-      <description>&lt;h2 id=&#34;update-i-have-written-a-follow-up-to-this-post-with-my-updated-opinion-new-setup--some-cool-scripts--fun-little-things-you-can-do&#34;&gt;Update: I have written a follow-up to this post with my updated opinion, new setup &amp;amp; some cool scripts &amp;amp; fun little things you can do.&lt;/h2&gt;&#xA;&lt;p&gt;I recently rebuilt my homelab setup, and with it, I decided to install &lt;a href=&#34;https://crowdsec.net&#34;&gt;CrowdSec&lt;/a&gt; on my machines. For the uninformed, Crowdsec is &amp;ldquo;a behavioral solution that detects and blocks malicious IPs based on their behavior. It offers a Security Engine, a Console, a Remediation Component, and an AppSec Component for infrastructure and application security.&amp;rdquo;&#xA;It basically offers an advanced firewall (you&amp;rsquo;d want to keep UFW or whatever you&amp;rsquo;re using), detections for different vulnerabilities, SSH Brute force, http probing, etc, and frequently updated ip blocklists.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;update-i-intend-on-writing-a-follow-up-to-this-post-in-the-near-future-with-more-info-and-an-overview-of-my-current-stup-with-scripts-and-other-presets-for-you&#34;&gt;Update: I intend on writing a follow up to this post in the near future with more info and an overview of my current stup with scripts and other presets for you&lt;/h2&gt;&#xA;&lt;p&gt;I recently rebuilt my homelab setup, and with it, I decided to install &lt;a href=&#34;https://crowdsec.net&#34;&gt;CrowdSec&lt;/a&gt; on my machines. For the uninformed, Crowdsec is &amp;ldquo;a behavioral solution that detects and blocks malicious IPs based on their behavior. It offers a Security Engine, a Console, a Remediation Component, and an AppSec Component for infrastructure and application security.&amp;rdquo;&#xA;It basically offers an advanced firewall (you&amp;rsquo;d want to keep UFW or whatever you&amp;rsquo;re using), detections for different vulnerabilities, SSH Brute force, http probing, etc, and frequently updated ip blocklists.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -13,7 +13,7 @@ readingTime = true
 hideComments = true
 +++
 
-## Update: I have written a follow-up to this post with my updated opinion, new setup & some cool scripts & fun little things you can do.
+## Update: I intend on writing a follow up to this post in the near future with more info and an overview of my current stup with scripts and other presets for you
 
 I recently rebuilt my homelab setup, and with it, I decided to install [CrowdSec](https://crowdsec.net) on my machines. For the uninformed, Crowdsec is "a behavioral solution that detects and blocks malicious IPs based on their behavior. It offers a Security Engine, a Console, a Remediation Component, and an AppSec Component for infrastructure and application security."
 It basically offers an advanced firewall (you'd want to keep UFW or whatever you're using), detections for different vulnerabilities, SSH Brute force, http probing, etc, and frequently updated ip blocklists.
