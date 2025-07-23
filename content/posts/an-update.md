@@ -17,7 +17,7 @@ Hello howdy hola bonjour! It's been a good few months since I last posted here, 
 
 In this time, I've been working on getting a grasp on my mental health (this is a consistent battle on my end), all while fighting self-doubt and other things. I've been away from game development, not just because I needed a break, but because I was overwhelmed. I had put too many projects (3 TOTAL! NOT GOOD AT ALL) into something that I'd like to continue doing for the rest of my life, and as such, got overwhelmed quickly.
 
-I almost feel that I'm ready to come back, and I will be back very soon this *Thursday at 8pm EDT* (usually would be wednesday but due to ongoing stuff with family I need to move it a day forward)
+I almost feel that I'm ready to come back, and I will be back very soon this *Thursday* (usually would be wednesday but due to ongoing stuff with family I need to move it a day forward)
 
 You can also notice that this site no longer spans the whole width of your browser (might be different on mobile), which was a choice by me as I didn't like the way it looked before. (which was changed originally because I didn't originally like the way this looked before, it's come full circle lol)
 
@@ -62,6 +62,8 @@ Misc:
 ![ready or not is a game](https://us-east-1.tixte.net/uploads/your.driver.fyi/ReadyOrNotSteam-Win64-Shipping_7oWqReyNhy.jpg)
 
 this is alot more of a rant or vent or whatever you want to call it then anything actually readable, but if you read the entire thing I appreciate it.
+
+edit: I realize how jumbled this post is, i'll probably have more cohesive stuff out soon.
 
 until next time,
 
