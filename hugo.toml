@@ -110,7 +110,7 @@ copyright = '© 2025 Itsyourdriver'
           url = "/posts"
         [[languages.en.menu.main]]
           identifier = "about"
-          name = "About Me"
+          name = "About/Info"
           url = "/about"
         [[languages.en.menu.main]]
           identifier = "RSS"

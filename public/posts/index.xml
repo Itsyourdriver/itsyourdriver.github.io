@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2025 Itsyourdriver</copyright>
-    <lastBuildDate>Tue, 22 Jul 2025 12:46:30 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 25 Jul 2025 21:40:36 -0700</lastBuildDate>
     <atom:link href="https://itsyourdriver.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How and Why I Moved Away From Notion/Trello</title>
+      <link>https://itsyourdriver.xyz/posts/how-and-why-i-moved-away-from-notion-trello/</link>
+      <pubDate>Fri, 25 Jul 2025 21:40:36 -0700</pubDate>
+      <guid>https://itsyourdriver.xyz/posts/how-and-why-i-moved-away-from-notion-trello/</guid>
+      <description>&lt;p&gt;In the past few months, I finally made the jump away from popular productivity platforms such as &lt;a href=&#34;https://trello.com&#34;&gt;Trello&lt;/a&gt; and &lt;a href=&#34;https://notion.com&#34;&gt;Notion&lt;/a&gt;. How, and why? You may ask.&lt;/p&gt;&#xA;&lt;p&gt;The main reason is that I wanted control over my data, get out of the limitations provided by solutions such as Trello/Notion and to be more private. So, what do I use now?&lt;/p&gt;&#xA;&lt;h1 id=&#34;great-question&#34;&gt;Great Question&lt;/h1&gt;&#xA;&lt;p&gt;I’ve migrated everything over to a selfhosted instance of &lt;a href=&#34;https://nextcloud.com&#34;&gt;Nextcloud&lt;/a&gt;. While it may not be the most polished, it’s overall quite good.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>An Update/Rant about inactivity &amp; Discussion/Rant about gamedev stuff</title>
       <link>https://itsyourdriver.xyz/posts/an-update/</link>
