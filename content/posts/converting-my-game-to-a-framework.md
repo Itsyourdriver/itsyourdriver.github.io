@@ -31,6 +31,8 @@ Do NOT be me.
 > ![My Remote Event situation](/images/converting-my-game-to-a-framework/remotes.png)
 >
 
+(I have since changed the way I do a lot of these things, the reason why so many of these aren't used any more is due to testing code, among other things.)
+
 I’m now using the [Quebec](https://devforum.roblox.com/t/framework-quebec-typed-roblox-game-framework/3810890) framework, which some might say to me: “Why quebec? Are you crazy? The devforum post for it isn’t even a month old yet!”
 
 You’re right, it is new. However, for me, Quebec just works. I find it easy to understand, and it was really the only framework that I could find atleast on the devforum that seemed to be actively maintained and didn’t have some sort of flaw with it.
