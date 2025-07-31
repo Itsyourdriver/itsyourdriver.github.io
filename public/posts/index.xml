@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© 2025 Itsyourdriver</copyright>
-    <lastBuildDate>Fri, 25 Jul 2025 21:40:36 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 31 Jul 2025 11:09:19 -0700</lastBuildDate>
     <atom:link href="https://itsyourdriver.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Converting my Roblox game to a framework, stupid or insane?</title>
+      <link>https://itsyourdriver.xyz/posts/converting-my-game-to-a-framework/</link>
+      <pubDate>Thu, 31 Jul 2025 11:09:19 -0700</pubDate>
+      <guid>https://itsyourdriver.xyz/posts/converting-my-game-to-a-framework/</guid>
+      <description>&lt;p&gt;Over the past couple of days I have begun converting my Roblox game over to a framework, now the history of frameworks on Roblox is interesting, the most well known one to my knowledge being &lt;a href=&#34;https://github.com/Sleitnick/Knit&#34;&gt;Knit&lt;/a&gt;, which is no longer maintained/is now archived and has some &lt;a href=&#34;https://scribe.rip/@sleitnick/knit-its-history-and-how-to-build-it-better-3100da97b36&#34;&gt;issues outlined by it&amp;rsquo;s creator&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Knit was based on a SSA (Single Script Architecture) system, which basically means that one script (think of a script as a file of code), controls / manages a lot of other scripts (specifically &lt;a href=&#34;https://create.roblox.com/docs/reference/engine/classes/ModuleScript&#34;&gt;ModuleScripts&lt;/a&gt;).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How and Why I Moved Away From Notion/Trello</title>
       <link>https://itsyourdriver.xyz/posts/how-and-why-i-moved-away-from-notion-trello/</link>

@@ -2,16 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://itsyourdriver.xyz/posts/converting-my-game-to-a-framework/</loc>
+    <lastmod>2025-07-31T11:09:19-07:00</lastmod>
+  </url><url>
+    <loc>https://itsyourdriver.xyz/tags/gamedev/</loc>
+    <lastmod>2025-07-31T11:09:19-07:00</lastmod>
+  </url><url>
+    <loc>https://itsyourdriver.xyz/</loc>
+    <lastmod>2025-07-31T11:09:19-07:00</lastmod>
+  </url><url>
+    <loc>https://itsyourdriver.xyz/posts/</loc>
+    <lastmod>2025-07-31T11:09:19-07:00</lastmod>
+  </url><url>
+    <loc>https://itsyourdriver.xyz/tags/programming/</loc>
+    <lastmod>2025-07-31T11:09:19-07:00</lastmod>
+  </url><url>
+    <loc>https://itsyourdriver.xyz/tags/roblox/</loc>
+    <lastmod>2025-07-31T11:09:19-07:00</lastmod>
+  </url><url>
+    <loc>https://itsyourdriver.xyz/tags/</loc>
+    <lastmod>2025-07-31T11:09:19-07:00</lastmod>
+  </url><url>
     <loc>https://itsyourdriver.xyz/tags/alternatives/</loc>
     <lastmod>2025-07-25T21:40:36-07:00</lastmod>
   </url><url>
     <loc>https://itsyourdriver.xyz/posts/how-and-why-i-moved-away-from-notion-trello/</loc>
-    <lastmod>2025-07-25T21:40:36-07:00</lastmod>
-  </url><url>
-    <loc>https://itsyourdriver.xyz/</loc>
-    <lastmod>2025-07-25T21:40:36-07:00</lastmod>
-  </url><url>
-    <loc>https://itsyourdriver.xyz/posts/</loc>
     <lastmod>2025-07-25T21:40:36-07:00</lastmod>
   </url><url>
     <loc>https://itsyourdriver.xyz/tags/privacy/</loc>
@@ -20,13 +35,7 @@
     <loc>https://itsyourdriver.xyz/tags/selfhosting/</loc>
     <lastmod>2025-07-25T21:40:36-07:00</lastmod>
   </url><url>
-    <loc>https://itsyourdriver.xyz/tags/</loc>
-    <lastmod>2025-07-25T21:40:36-07:00</lastmod>
-  </url><url>
     <loc>https://itsyourdriver.xyz/posts/an-update/</loc>
-    <lastmod>2025-07-22T12:46:30-07:00</lastmod>
-  </url><url>
-    <loc>https://itsyourdriver.xyz/tags/gamedev/</loc>
     <lastmod>2025-07-22T12:46:30-07:00</lastmod>
   </url><url>
     <loc>https://itsyourdriver.xyz/tags/introspection/</loc>
