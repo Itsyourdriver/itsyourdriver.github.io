@@ -10,7 +10,7 @@ I selfhost a couple of "alternative frontends" and (soon) other services which a
 
 - [LibreMDb](https://lmdb.driver.fyi) - A frontend for iMDb.
 - [Quetre](https://quetre.driver.fyi) - A frontend for Quora.
-- [AnonymousOverflow](https://quetre.driver.fyi) - A frontend for StackOverflow and all of their sites.
+- [AnonymousOverflow](https://ao.driver.fyi) - A frontend for StackOverflow and all of their sites.
 
 All are protected by [Anubis](https://anubis.techaro.lol/), and currently have some logging enabled.
 Logs are not monitored or shared/sold, and will be disabled once I can finalize my setup.
