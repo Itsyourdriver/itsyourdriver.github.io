@@ -20,7 +20,7 @@ copyright = '© 2025 Itsyourdriver'
   contentTypeName = "posts"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 4
+  showMenuItems = 5
 
   # show selector to switch language
   showLanguageSelector = false
@@ -110,20 +110,26 @@ copyright = '© 2025 Itsyourdriver'
           url = "/posts"
         [[languages.en.menu.main]]
           identifier = "about"
-          name = "About/Info"
+          name = "About"
           url = "/about"
+        [[languages.en.menu.main]]
+          identifier = "socials"
+          name = "Socials & Contact"
+          url = "/socials"
+        [[languages.en.menu.main]]
+          identifier = "services"
+          name = "Services"
+          url = "/services"
         [[languages.en.menu.main]]
           identifier = "RSS"
           name = "RSS"
           url = "/posts/index.xml"
-        [[languages.en.menu.main]]
-          identifier = "socials"
-          name = "Socials/Contact"
-          url = "/socials"
+
         [[languages.en.menu.main]]
           identifier = "tags"
           name = "Tags"
           url = "/tags"
+
         
 
 [services]
