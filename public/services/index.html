@@ -6,9 +6,8 @@
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Services I selfhost a couple of &ldquo;alternative frontends&rdquo; and (soon) other services which are completely free to use.
-LibreMDb - A frontend for iMDb. Quetre - A frontend for Quora. AnonymousOverflow - A frontend for StackOverflow and all of their sites. All are protected by Anubis, and currently have some logging enabled. Logs are not monitored or shared/sold, and will be disabled once I can finalize my setup.
-What are alternative frontends? I&rsquo;ll put it in my own words, Alternative Frontends are an alternative way to view certain websites (iMDb, Quora, etc) with no tracking, popups, or ads. They proxy your request for you (preventing data such as your public IP address, User Agent, and data used to track you across the web and link said data to your identity), and present the information from the website to you in a cleaner format.
+<meta name="description" content="Services I host a couple of &ldquo;alternative frontends&rdquo; and (soon) other services which are completely free to use.
+LibreMDb - A frontend for iMDb. Quetre - A frontend for Quora. AnonymousOverflow - A frontend for StackOverflow and all of their sites. (NOTE: Might be taking this out at any time due to Flaresolverr being a little performance-heavy for my tiny server.) Redlib - A frontend for reddit. Using a fork from here to route traffic through reddit&rsquo;s onion service to prevent blocks (as my server is blocked by reddit due to their insane amounts of blocks on VPN/Datacenter IP addresses) All are protected by Anubis.
 " />
 <meta name="keywords" content="itsyourdriver.xyz" />
 
@@ -81,9 +80,8 @@ What are alternative frontends? I&rsquo;ll put it in my own words, Alternative F
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Services">
-<meta property="og:description" content="Services I selfhost a couple of &ldquo;alternative frontends&rdquo; and (soon) other services which are completely free to use.
-LibreMDb - A frontend for iMDb. Quetre - A frontend for Quora. AnonymousOverflow - A frontend for StackOverflow and all of their sites. All are protected by Anubis, and currently have some logging enabled. Logs are not monitored or shared/sold, and will be disabled once I can finalize my setup.
-What are alternative frontends? I&rsquo;ll put it in my own words, Alternative Frontends are an alternative way to view certain websites (iMDb, Quora, etc) with no tracking, popups, or ads. They proxy your request for you (preventing data such as your public IP address, User Agent, and data used to track you across the web and link said data to your identity), and present the information from the website to you in a cleaner format.
+<meta property="og:description" content="Services I host a couple of &ldquo;alternative frontends&rdquo; and (soon) other services which are completely free to use.
+LibreMDb - A frontend for iMDb. Quetre - A frontend for Quora. AnonymousOverflow - A frontend for StackOverflow and all of their sites. (NOTE: Might be taking this out at any time due to Flaresolverr being a little performance-heavy for my tiny server.) Redlib - A frontend for reddit. Using a fork from here to route traffic through reddit&rsquo;s onion service to prevent blocks (as my server is blocked by reddit due to their insane amounts of blocks on VPN/Datacenter IP addresses) All are protected by Anubis.
 " />
 <meta property="og:url" content="https://itsyourdriver.xyz/services/" />
 <meta property="og:site_name" content="itsyourdriver.xyz" />
@@ -215,20 +213,38 @@ What are alternative frontends? I&rsquo;ll put it in my own words, Alternative F
   
     <div class="index-content">
       <h1 id="services">Services</h1>
-<p>I selfhost a couple of &ldquo;alternative frontends&rdquo; and (soon) other services which are completely free to use.</p>
+<p>I host a couple of &ldquo;alternative frontends&rdquo; and (soon) other services which are completely free to use.</p>
 <ul>
 <li><a href="https://lmdb.driver.fyi">LibreMDb</a> - A frontend for iMDb.</li>
 <li><a href="https://quetre.driver.fyi">Quetre</a> - A frontend for Quora.</li>
-<li><a href="https://ao.driver.fyi">AnonymousOverflow</a> - A frontend for StackOverflow and all of their sites.</li>
+<li><a href="https://ao.driver.fyi">AnonymousOverflow</a> - A frontend for StackOverflow and all of their sites. (NOTE: Might be taking this out at any time due to Flaresolverr being a little performance-heavy for my tiny server.)</li>
+<li><a href="https://redlib.driver.fyi">Redlib</a> - A frontend for reddit. Using a fork from <a href="https://git.ptr.moe/baalajimaestro/redlib">here</a> to route traffic through reddit&rsquo;s onion service to prevent blocks (as my server is blocked by reddit due to their insane amounts of blocks on VPN/Datacenter IP addresses)</li>
 </ul>
-<p>All are protected by <a href="https://anubis.techaro.lol/">Anubis</a>, and currently have some logging enabled.
-Logs are not monitored or shared/sold, and will be disabled once I can finalize my setup.</p>
+<p>All are protected by <a href="https://anubis.techaro.lol/">Anubis</a>.</p>
+<h1 id="logging-info">Logging Info</h1>
+<p>Both my Reverse Proxy and Anubis take error logs.</p>
+<p>The reverse proxy&rsquo;s error logs include info such as your IP address and user agent. While I&rsquo;d like to disable these there is not currently a good way to due to what I am using.</p>
+<p>I am working on migrating to something better, but it will take a few days.</p>
+<p>These logs are not monitored, shared, or sold. I have no interest in what you are viewing. Error logs should not be common if ever happening at any point.</p>
 <h2 id="what-are-alternative-frontends">What are alternative frontends?</h2>
-<p>I&rsquo;ll put it in my own words, Alternative Frontends are an alternative way to view certain websites (iMDb, Quora, etc) with no tracking, popups, or ads. They proxy your request for you (preventing data such as your <a href="https://en.wikipedia.org/wiki/Wikipedia:Get_my_IP_address">public IP address</a>, <a href="https://en.wikipedia.org/wiki/User_agent">User Agent</a>, and <a href="https://en.wikipedia.org/wiki/Device_fingerprint">data used to track you across the web and link said data to your identity</a>), and present the information from the website to you in a cleaner format.</p>
+<p>I&rsquo;ll put it in my own words, Alternative Frontends are an alternative way to view certain websites (iMDb, Quora, etc) with no tracking, popups, or ads. They proxy your request for you (preventing data such as your <a href="https://en.wikipedia.org/wiki/Wikipedia:Get_my_IP_address">public IP address</a>, <a href="https://en.wikipedia.org/wiki/User-Agent_header">User Agent</a>, and <a href="https://en.wikipedia.org/wiki/Device_fingerprint">data used to track you across the web and link said data to your identity</a>), and present the information from the website to you in a cleaner format.</p>
 <p>In all cases, unless it is something that you run as an application and not use as a website, alternative frontends do NOT support using your account with said service (iMDb, Quora, etc).</p>
 <p>You can find frontends for <a href="https://github.com/digitalblossom/alternative-frontends">all sorts of websites/services</a>.</p>
 <p>If you want to automatically redirect from different websites to a frontend, check out a browser extension such as <a href="https://libredirect.github.io/">LibRedirect</a>.</p>
 <p>(if the above extension isn&rsquo;t compatible with your browser (ex: you are using chrome), you might want to consider switching to something such as <a href="https://www.firefox.com/en-US/">Firefox</a> or <a href="https://librewolf.net/">LibreWolf</a>)</p>
+<h2 id="why-wont-you-add-these-to-the-public-instance-lists-of-each-frontend">Why won&rsquo;t you add these to the public instance lists of each frontend?</h2>
+<p>As of now, I don&rsquo;t know if my server can handle it. However, it&rsquo;s also because a few I use personally, and would rather not have them blocked. While I do take pre-emptive measures (such as using Anubis to prevent bots from scraping, etc), The only service that I see NOT getting blocked if there&rsquo;s more usage is Redlib, due to it being routed through Reddit&rsquo;s Onion Service. Otherwise, LibreMDb should be fine, since the official instance seems just fine despite my almost daily usage of it.</p>
+<p>If my thoughts change on this, or I&rsquo;m ready to start rotating IP addresses and have more preventative measures in place for everything, then I&rsquo;ll be adding them to the lists.</p>
+<p>If you are reading this and happen to have created any of the projects that I am now hosting an instance of and have tips or a comment, please stop by my DMs/inbox on Discord, Email, or Matrix (@itsyourdriver_:matrix.org for now).</p>
+<h2 id="will-you-ever-add-any-more-servicesfrontends">Will you ever add any more services/frontends?</h2>
+<p>Maybe. As of now I wanted to do a host a few frontends that had either a lack of working instances or already had a bunch of working ones but that I used myself.</p>
+<p>If I add anything, it won&rsquo;t be going on the same server for sure, expect the following in the future potentially:</p>
+<ul>
+<li>Rimgo (Imgur frontend)</li>
+<li>Scribe (Medium Frontend, would like an image proxy for this but I guess I&rsquo;ll try and do it myself)</li>
+<li>SearXNG (We are FOR SURE not going on the public instance list for this one, primarily because I don&rsquo;t think I&rsquo;m able to bypass the instance list servers for Anubis but also because I can&rsquo;t easily keep the instance unblocked)</li>
+<li>Mozhi (Translator frontend, think Google Translate, DeepL, Bing Translate, etc)</li>
+</ul>
 
     </div>
   
