@@ -8,6 +8,10 @@ layout: page
 
 I host a couple of "alternative frontends" and (soon) other services which are completely free to use.
 
+> Check uptime [here](https://status.driver.fyi/). 
+>
+> **WARNING that the above status page is hosted by BetterStack which uses Google Analytics, nothing I can do about it for now until I replace it with something without tracking.**
+
 - [LibreMDb](https://lmdb.driver.fyi) - A frontend for iMDb.
 - [Quetre](https://quetre.driver.fyi) - A frontend for Quora.
 - [AnonymousOverflow](https://ao.driver.fyi) - A frontend for StackOverflow and all of their sites. (NOTE: Might be taking this out at any time due to Flaresolverr being a little performance-heavy for my tiny server.)
