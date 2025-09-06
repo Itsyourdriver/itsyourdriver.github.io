@@ -9,7 +9,9 @@ layout: page
 I host a couple of "alternative frontends" and (soon) other services which are completely free to use.
 
 ### Update on Redlib
-> The fork that I am using has stopped working (due to a TLS error?), not sure why, but I'll update when it's working again.
+> ~~The fork that I am using has stopped working (due to a TLS error?), not sure why, but I'll update when it's working again.~~
+>
+> EDIT: Nevermind! It isn't a problem with the fork, Reddit's onion link's SSL cert expired. Might be a bit before everything is working again.
 >
 > Everything else appears to be working fine. (as in nothing is blocked, but the status page might say otherwise if the server is down.)
 
