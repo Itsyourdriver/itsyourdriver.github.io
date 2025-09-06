@@ -8,14 +8,19 @@ layout: page
 
 I host a couple of "alternative frontends" and (soon) other services which are completely free to use.
 
+### Update on Redlib
+> The fork that I am using has stopped working (due to a TLS error?), not sure why, but I'll update when it's working again.
+>
+> Everything else appears to be working fine. (as in nothing is blocked, but the status page might say otherwise if the server is down.)
+
 > Check uptime [here](https://status.driver.fyi/). 
 >
 > **WARNING that the above status page is hosted by BetterStack which uses Google Analytics, nothing I can do about it for now until I replace it with something without tracking.**
 
 - [LibreMDb](https://lmdb.driver.fyi) - A frontend for iMDb.
 - [Quetre](https://quetre.driver.fyi) - A frontend for Quora.
-- [AnonymousOverflow](https://ao.driver.fyi) - A frontend for StackOverflow and all of their sites. (NOTE: Might be taking this out at any time due to Flaresolverr being a little performance-heavy for my tiny server.)
-- [Redlib](https://redlib.driver.fyi) - A frontend for reddit. Using a fork from [here](https://git.ptr.moe/baalajimaestro/redlib) to route traffic through reddit's onion service to prevent blocks (as my server is blocked by reddit due to their insane amounts of blocks on VPN/Datacenter IP addresses)
+- [AnonymousOverflow](https://ao.driver.fyi) - A frontend for StackOverflow and all of their sites.
+- [Redlib](https://redlib.driver.fyi) - **Broken right now.** A frontend for reddit. Using a fork from [here](https://git.ptr.moe/baalajimaestro/redlib) to route traffic through reddit's onion service to prevent blocks (as my server is blocked by reddit due to their insane amounts of blocks on VPN/Datacenter IP addresses)
 
 
 All are protected by [Anubis](https://anubis.techaro.lol/).
@@ -39,7 +44,7 @@ You can find frontends for [all sorts of websites/services](https://github.com/d
 
 If you want to automatically redirect from different websites to a frontend, check out a browser extension such as [LibRedirect](https://libredirect.github.io/).
 
-(if the above extension isn't compatible with your browser (ex: you are using chrome), you might want to consider switching to something such as [Firefox](https://www.firefox.com/en-US/) or [LibreWolf](https://librewolf.net/))
+(if the above extension isn't compatible with your browser (ex: you are using chrome), you might want to consider switching to something such as [Firefox](https://www.firefox.com/en-US/) or [LibreWolf](https://librewolf.net/).)
 
 ## Why won't you add these to the public instance lists of each frontend?
 As of now, I don't know if my server can handle it. However, it's also because a few I use personally, and would rather not have them blocked. While I do take pre-emptive measures (such as using Anubis to prevent bots from scraping, etc), The only service that I see NOT getting blocked if there's more usage is Redlib, due to it being routed through Reddit's Onion Service. Otherwise, LibreMDb should be fine, since the official instance seems just fine despite my almost daily usage of it.
@@ -54,5 +59,5 @@ Maybe. As of now I wanted to do a host a few frontends that had either a lack of
 If I add anything, it won't be going on the same server for sure, expect the following in the future potentially:
 - Rimgo (Imgur frontend)
 - Scribe (Medium Frontend, would like an image proxy for this but I guess I'll try and do it myself)
-- SearXNG (We are FOR SURE not going on the public instance list for this one, primarily because I don't think I'm able to bypass the instance list servers for Anubis but also because I can't easily keep the instance unblocked)
+- SearXNG (We are FOR SURE not going on the public instance list for this one, primarily because I can't easily keep the instance unblocked due to potential heavy usage)
 - Mozhi (Translator frontend, think Google Translate, DeepL, Bing Translate, etc)
