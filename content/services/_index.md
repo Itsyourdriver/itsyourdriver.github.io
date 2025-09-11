@@ -8,12 +8,10 @@ layout: page
 
 I host a couple of "alternative frontends" and (soon) other services which are completely free to use.
 
-### Update on Redlib
-> ~~The fork that I am using has stopped working (due to a TLS error?), not sure why, but I'll update when it's working again.~~
+### Redlib is working again (9/10/15)
+> Reddit has fixed their onion URL, so as such, my instance is back up and running.
+> There is still an issue with the error "TOR connection failed", if you see this, reload the page and it should work. I think the issue is something to do with my setup, I'll mess with it soon. :D
 >
-> EDIT: Nevermind! It isn't a problem with the fork, Reddit's onion link's SSL cert expired. Might be a bit before everything is working again.
->
-> Everything else appears to be working fine. (as in nothing is blocked, but the status page might say otherwise if the server is down.)
 
 > Check uptime [here](https://status.driver.fyi/). 
 >
@@ -22,7 +20,7 @@ I host a couple of "alternative frontends" and (soon) other services which are c
 - [LibreMDb](https://lmdb.driver.fyi) - A frontend for iMDb.
 - [Quetre](https://quetre.driver.fyi) - A frontend for Quora.
 - [AnonymousOverflow](https://ao.driver.fyi) - A frontend for StackOverflow and all of their sites.
-- [Redlib](https://redlib.driver.fyi) - **Broken right now.** A frontend for reddit. Using a fork from [here](https://git.ptr.moe/baalajimaestro/redlib) to route traffic through reddit's onion service to prevent blocks (as my server is blocked by reddit due to their insane amounts of blocks on VPN/Datacenter IP addresses)
+- [Redlib](https://redlib.driver.fyi) - A frontend for reddit. Using a fork from [here](https://git.ptr.moe/baalajimaestro/redlib) to route traffic through reddit's onion service to prevent blocks (as my server is blocked by reddit due to their insane amounts of blocks on VPN/Datacenter IP addresses)
 
 
 All are protected by [Anubis](https://anubis.techaro.lol/).
