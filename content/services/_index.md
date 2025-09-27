@@ -20,8 +20,8 @@ I host a couple of "alternative frontends" and (soon) other services which are c
 - [LibreMDb](https://lmdb.driver.fyi) - A frontend for iMDb.
 - [Quetre](https://quetre.driver.fyi) - A frontend for Quora.
 - [AnonymousOverflow](https://ao.driver.fyi) - A frontend for StackOverflow and all of their sites.
-- [Redlib](https://redlib.driver.fyi) - A frontend for reddit. Using a fork from [here](https://git.ptr.moe/baalajimaestro/redlib) to route traffic through reddit's onion service to prevent blocks (as my server is blocked by reddit due to their insane amounts of blocks on VPN/Datacenter IP addresses)
-
+- [Redlib](https://redlib.driver.fyi) - A frontend for reddit. Using a fork from [here](https://git.ptr.moe/baalajimaestro/redlib) to route traffic through reddit's onion service to prevent blocks (as my server is blocked by reddit due to their insane amounts of pre-emptive blocks on VPN/Datacenter IP addresses)
+- [Phantom](https://phantom.driver.fyi) - A frontend for Fandom.
 
 All are protected by [Anubis](https://anubis.techaro.lol/).
 
