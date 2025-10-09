@@ -8,10 +8,16 @@ layout: page
 
 I host a couple of "alternative frontends" and (soon) other services which are completely free to use.
 
-### Redlib is working again (9/10/15)
-> Reddit has fixed their onion URL, so as such, my instance is back up and running.
-> There is still an issue with the error "TOR connection failed", if you see this, reload the page and it should work. I think the issue is something to do with my setup, I'll mess with it soon. :D
+Hosted in the US with Oracle. I plan to swap providers in the future, I do not have any ETA on this.
+
+### Quetre seems to be blocked or is having issues, LibreMDb broken, Status on AnonymousOverflow, + I'm late to mentioning Phantom.
+> Quetre is showing 503 (ratelimited/blocked) by Quora.
+> 
+> Also, LibreMDb appears to be having issues, likely a problem with iMDb changing something.
 >
+> I will likely be removing AnonymousOverflow soon for a few reasons. Please use another instance. I'll be putting a few things (one frontend, a few tools probably) in its place, though I haven't fully decided what it'll be yet.
+>
+> finally, I (as of a week or two ago), have started hosting Phantom, a frontend for Phantom similar to Breezewiki.
 
 > Check uptime [here](https://status.driver.fyi/). 
 >
@@ -38,13 +44,15 @@ These logs are not monitored, shared, or sold. I have no interest in what you ar
 ## What are alternative frontends?
 I'll put it in my own words, Alternative Frontends are an alternative way to view certain websites (iMDb, Quora, etc) with no tracking, popups, or ads. They proxy your request for you (preventing data such as your [public IP address](https://en.wikipedia.org/wiki/Wikipedia:Get_my_IP_address), [User Agent](https://en.wikipedia.org/wiki/User-Agent_header), and [data used to track you across the web and link said data to your identity](https://en.wikipedia.org/wiki/Device_fingerprint)), and present the information from the website to you in a cleaner format.
 
-In all cases, unless it is something that you run as an application and not use as a website, alternative frontends do NOT support using your account with said service (iMDb, Quora, etc).
+In all cases, unless it is something that you run as an application and not use as a website, alternative frontends do NOT support using your account with said service (iMDb, Quora, etc). Some of them may support local accounts, such as the case of Invidious.
 
 You can find frontends for [all sorts of websites/services](https://github.com/digitalblossom/alternative-frontends).
 
 If you want to automatically redirect from different websites to a frontend, check out a browser extension such as [LibRedirect](https://libredirect.github.io/).
 
 (if the above extension isn't compatible with your browser (ex: you are using chrome), you might want to consider switching to something such as [Firefox](https://www.firefox.com/en-US/) or [LibreWolf](https://librewolf.net/).)
+
+Alternatively you can find a redirector extension to add entries automatically, however I won't be providing examples for those as I do not use them.
 
 ## Why won't you add these to the public instance lists of each frontend?
 As of now, I don't know if my server can handle it. However, it's also because a few I use personally, and would rather not have them blocked. While I do take pre-emptive measures (such as using Anubis to prevent bots from scraping, etc), The only service that I see NOT getting blocked if there's more usage is Redlib, due to it being routed through Reddit's Onion Service. Otherwise, LibreMDb should be fine, since the official instance seems just fine despite my almost daily usage of it.
@@ -59,5 +67,11 @@ Maybe. As of now I wanted to do a host a few frontends that had either a lack of
 If I add anything, it won't be going on the same server for sure, expect the following in the future potentially:
 - Rimgo (Imgur frontend)
 - Scribe (Medium Frontend, would like an image proxy for this but I guess I'll try and do it myself)
-- SearXNG (We are FOR SURE not going on the public instance list for this one, primarily because I can't easily keep the instance unblocked due to potential heavy usage)
 - Mozhi (Translator frontend, think Google Translate, DeepL, Bing Translate, etc)
+
+
+I will not host the following due to hurdles in getting them operational or other reasons:
+- Invidious (might in the future, but we're talking many years in the future)
+- SearXNG
+- Safetwitch
+- Nitter
