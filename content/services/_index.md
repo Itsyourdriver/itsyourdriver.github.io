@@ -10,14 +10,11 @@ I host a couple of "alternative frontends" and (soon) other services which are c
 
 Hosted in the US with Oracle. I plan to swap providers in the future, I do not have any ETA on this.
 
-### Quetre seems to be blocked or is having issues, LibreMDb broken, Status on AnonymousOverflow, + I'm late to mentioning Phantom.
+### 10/13/25: Quetre still blocked, LibreMDb Fixed!
 > Quetre is showing 503 (ratelimited/blocked) by Quora.
-> 
-> Also, LibreMDb appears to be having issues, likely a problem with iMDb changing something.
 >
-> I will likely be removing AnonymousOverflow soon for a few reasons. Please use another instance. I'll be putting a few things (one frontend, a few tools probably) in its place, though I haven't fully decided what it'll be yet.
->
-> finally, I (as of a week or two ago), have started hosting Phantom, a frontend for Phantom similar to Breezewiki.
+> I'm believe I was on the docker image tag for LibreMDb, I have fixed it and have updated so it works now. 
+
 
 > Check uptime [here](https://status.driver.fyi/). 
 >
