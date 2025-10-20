@@ -10,10 +10,12 @@ I host a couple of "alternative frontends" and (soon) other services which are c
 
 Hosted in the US with Oracle. I plan to swap providers in the future, I do not have any ETA on this.
 
-### 10/13/25: Quetre still blocked, LibreMDb Fixed!
-> Quetre is showing 503 (ratelimited/blocked) by Quora.
+### Notice
+> Quetre is still showing 503 (ratelimited/blocked) by Quora.
 >
-> I'm believe I was on the docker image tag for LibreMDb, I have fixed it and have updated so it works now. 
+>
+> I intend to apply a fix for redlib to prevent it from giving the error (TOR Connection Failed) within the next day or two
+
 
 
 > Check uptime [here](https://status.driver.fyi/). 
@@ -64,7 +66,6 @@ Maybe. As of now I wanted to do a host a few frontends that had either a lack of
 If I add anything, it won't be going on the same server for sure, expect the following in the future potentially:
 - Rimgo (Imgur frontend)
 - Scribe (Medium Frontend, would like an image proxy for this but I guess I'll try and do it myself)
-- Mozhi (Translator frontend, think Google Translate, DeepL, Bing Translate, etc)
 
 
 I will not host the following due to hurdles in getting them operational or other reasons:
