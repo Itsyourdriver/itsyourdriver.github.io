@@ -11,10 +11,12 @@ I host a couple of "alternative frontends" and (soon) other services which are c
 Hosted in the US with Oracle. I plan to swap providers in the future, I do not have any ETA on this.
 
 ### Notice
+>
+> I will be removing AnonymousOverflow soon, please remove my instance from your redirectors/swap to another instance.
 > Quetre is still showing 503 (ratelimited/blocked) by Quora.
 >
+> Deployed some fixes to Redlib and no luck, Redlib may be spotty for the time being. For more reliability use https://lr.ptr.moe/ or https://redlib.orangenet.cc instead.
 >
-> I intend to apply a fix for redlib to prevent it from giving the error (TOR Connection Failed) within the next day or two
 
 
 
@@ -23,12 +25,13 @@ Hosted in the US with Oracle. I plan to swap providers in the future, I do not h
 > **WARNING that the above status page is hosted by BetterStack which uses Google Analytics, nothing I can do about it for now until I replace it with something without tracking.**
 
 - [LibreMDb](https://lmdb.driver.fyi) - A frontend for iMDb.
-- [Quetre](https://quetre.driver.fyi) - A frontend for Quora.
-- [AnonymousOverflow](https://ao.driver.fyi) - A frontend for StackOverflow and all of their sites.
+- [Quetre](https://quetre.driver.fyi) - A frontend for Quora. - Instance is currently blocked. I am working on finding a way around it, no promises for now.
 - [Redlib](https://redlib.driver.fyi) - A frontend for reddit. Using a fork from [here](https://git.ptr.moe/baalajimaestro/redlib) to route traffic through reddit's onion service to prevent blocks (as my server is blocked by reddit due to their insane amounts of pre-emptive blocks on VPN/Datacenter IP addresses)
 - [Phantom](https://phantom.driver.fyi) - A frontend for Fandom.
 
-All are protected by [Anubis](https://anubis.techaro.lol/).
+All are protected by [Anubis](https://anubis.techaro.lol/). I am aware that lower powered devices cannot easily complete Anubis Challenges, unfortunately I am not wanting to deal with bots scraping my instances so you will have to deal with it for now.
+
+As of now I am not interested in hosting any more frontends, though I have some I'd like to host in the future ^_^
 
 # Logging Info
 Both my Reverse Proxy and Anubis take error logs.
@@ -51,7 +54,7 @@ If you want to automatically redirect from different websites to a frontend, che
 
 (if the above extension isn't compatible with your browser (ex: you are using chrome), you might want to consider switching to something such as [Firefox](https://www.firefox.com/en-US/) or [LibreWolf](https://librewolf.net/).)
 
-Alternatively you can find a redirector extension to add entries automatically, however I won't be providing examples for those as I do not use them.
+Alternatively you can find a generic redirector extension instead which should work on other browsers, however I won't be providing examples or links for those as I do not use them.
 
 ## Why won't you add these to the public instance lists of each frontend?
 As of now, I don't know if my server can handle it. However, it's also because a few I use personally, and would rather not have them blocked. While I do take pre-emptive measures (such as using Anubis to prevent bots from scraping, etc), The only service that I see NOT getting blocked if there's more usage is Redlib, due to it being routed through Reddit's Onion Service. Otherwise, LibreMDb should be fine, since the official instance seems just fine despite my almost daily usage of it.
@@ -60,8 +63,10 @@ If my thoughts change on this, or I'm ready to start rotating IP addresses and h
 
 If you are reading this and happen to have created any of the projects that I am now hosting an instance of and have tips or a comment, please stop by my DMs/inbox on Discord, Email, or Matrix (@itsyourdriver_:matrix.org for now).
 
+The only frontend that I broke this rule for is Phantom, as I felt that my instance being on the list would be beneficial as Phantom is still relatively new.
+
 ## Will you ever add any more services/frontends?
-Maybe. As of now I wanted to do a host a few frontends that had either a lack of working instances or already had a bunch of working ones but that I used myself.
+As of now I won't be adding anything.
 
 If I add anything, it won't be going on the same server for sure, expect the following in the future potentially:
 - Rimgo (Imgur frontend)

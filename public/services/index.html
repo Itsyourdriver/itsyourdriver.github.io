@@ -8,8 +8,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Services I host a couple of &ldquo;alternative frontends&rdquo; and (soon) other services which are completely free to use.
 Hosted in the US with Oracle. I plan to swap providers in the future, I do not have any ETA on this.
-Notice Quetre is still showing 503 (ratelimited/blocked) by Quora.
-I intend to apply a fix for redlib to prevent it from giving the error (TOR Connection Failed) within the next day or two
+Notice I will be removing AnonymousOverflow soon, please remove my instance from your redirectors/swap to another instance. Quetre is still showing 503 (ratelimited/blocked) by Quora.
+Deployed some fixes to Redlib and no luck, Redlib may be spotty for the time being. For more reliability use https://lr.ptr.moe/ or https://redlib.orangenet.cc instead.
 " />
 <meta name="keywords" content="itsyourdriver.xyz" />
 
@@ -84,8 +84,8 @@ I intend to apply a fix for redlib to prevent it from giving the error (TOR Conn
 <meta property="og:title" content="Services">
 <meta property="og:description" content="Services I host a couple of &ldquo;alternative frontends&rdquo; and (soon) other services which are completely free to use.
 Hosted in the US with Oracle. I plan to swap providers in the future, I do not have any ETA on this.
-Notice Quetre is still showing 503 (ratelimited/blocked) by Quora.
-I intend to apply a fix for redlib to prevent it from giving the error (TOR Connection Failed) within the next day or two
+Notice I will be removing AnonymousOverflow soon, please remove my instance from your redirectors/swap to another instance. Quetre is still showing 503 (ratelimited/blocked) by Quora.
+Deployed some fixes to Redlib and no luck, Redlib may be spotty for the time being. For more reliability use https://lr.ptr.moe/ or https://redlib.orangenet.cc instead.
 " />
 <meta property="og:url" content="https://itsyourdriver.xyz/services/" />
 <meta property="og:site_name" content="itsyourdriver.xyz" />
@@ -221,19 +221,20 @@ I intend to apply a fix for redlib to prevent it from giving the error (TOR Conn
 <p>Hosted in the US with Oracle. I plan to swap providers in the future, I do not have any ETA on this.</p>
 <h3 id="notice">Notice</h3>
 <blockquote>
-<p>Quetre is still showing 503 (ratelimited/blocked) by Quora.</p>
-<p>I intend to apply a fix for redlib to prevent it from giving the error (TOR Connection Failed) within the next day or two</p></blockquote>
+<p>I will be removing AnonymousOverflow soon, please remove my instance from your redirectors/swap to another instance.
+Quetre is still showing 503 (ratelimited/blocked) by Quora.</p>
+<p>Deployed some fixes to Redlib and no luck, Redlib may be spotty for the time being. For more reliability use <a href="https://lr.ptr.moe/">https://lr.ptr.moe/</a> or <a href="https://redlib.orangenet.cc">https://redlib.orangenet.cc</a> instead.</p></blockquote>
 <blockquote>
 <p>Check uptime <a href="https://status.driver.fyi/">here</a>.</p>
 <p><strong>WARNING that the above status page is hosted by BetterStack which uses Google Analytics, nothing I can do about it for now until I replace it with something without tracking.</strong></p></blockquote>
 <ul>
 <li><a href="https://lmdb.driver.fyi">LibreMDb</a> - A frontend for iMDb.</li>
-<li><a href="https://quetre.driver.fyi">Quetre</a> - A frontend for Quora.</li>
-<li><a href="https://ao.driver.fyi">AnonymousOverflow</a> - A frontend for StackOverflow and all of their sites.</li>
+<li><a href="https://quetre.driver.fyi">Quetre</a> - A frontend for Quora. - Instance is currently blocked. I am working on finding a way around it, no promises for now.</li>
 <li><a href="https://redlib.driver.fyi">Redlib</a> - A frontend for reddit. Using a fork from <a href="https://git.ptr.moe/baalajimaestro/redlib">here</a> to route traffic through reddit&rsquo;s onion service to prevent blocks (as my server is blocked by reddit due to their insane amounts of pre-emptive blocks on VPN/Datacenter IP addresses)</li>
 <li><a href="https://phantom.driver.fyi">Phantom</a> - A frontend for Fandom.</li>
 </ul>
-<p>All are protected by <a href="https://anubis.techaro.lol/">Anubis</a>.</p>
+<p>All are protected by <a href="https://anubis.techaro.lol/">Anubis</a>. I am aware that lower powered devices cannot easily complete Anubis Challenges, unfortunately I am not wanting to deal with bots scraping my instances so you will have to deal with it for now.</p>
+<p>As of now I am not interested in hosting any more frontends, though I have some I&rsquo;d like to host in the future ^_^</p>
 <h1 id="logging-info">Logging Info</h1>
 <p>Both my Reverse Proxy and Anubis take error logs.</p>
 <p>The reverse proxy&rsquo;s error logs include info such as your IP address and user agent. While I&rsquo;d like to disable these there is not currently a good way to due to what I am using.</p>
@@ -245,13 +246,14 @@ I intend to apply a fix for redlib to prevent it from giving the error (TOR Conn
 <p>You can find frontends for <a href="https://github.com/digitalblossom/alternative-frontends">all sorts of websites/services</a>.</p>
 <p>If you want to automatically redirect from different websites to a frontend, check out a browser extension such as <a href="https://libredirect.github.io/">LibRedirect</a>.</p>
 <p>(if the above extension isn&rsquo;t compatible with your browser (ex: you are using chrome), you might want to consider switching to something such as <a href="https://www.firefox.com/en-US/">Firefox</a> or <a href="https://librewolf.net/">LibreWolf</a>.)</p>
-<p>Alternatively you can find a redirector extension to add entries automatically, however I won&rsquo;t be providing examples for those as I do not use them.</p>
+<p>Alternatively you can find a generic redirector extension instead which should work on other browsers, however I won&rsquo;t be providing examples or links for those as I do not use them.</p>
 <h2 id="why-wont-you-add-these-to-the-public-instance-lists-of-each-frontend">Why won&rsquo;t you add these to the public instance lists of each frontend?</h2>
 <p>As of now, I don&rsquo;t know if my server can handle it. However, it&rsquo;s also because a few I use personally, and would rather not have them blocked. While I do take pre-emptive measures (such as using Anubis to prevent bots from scraping, etc), The only service that I see NOT getting blocked if there&rsquo;s more usage is Redlib, due to it being routed through Reddit&rsquo;s Onion Service. Otherwise, LibreMDb should be fine, since the official instance seems just fine despite my almost daily usage of it.</p>
 <p>If my thoughts change on this, or I&rsquo;m ready to start rotating IP addresses and have more preventative measures in place for everything, then I&rsquo;ll be adding them to the lists.</p>
 <p>If you are reading this and happen to have created any of the projects that I am now hosting an instance of and have tips or a comment, please stop by my DMs/inbox on Discord, Email, or Matrix (@itsyourdriver_:matrix.org for now).</p>
+<p>The only frontend that I broke this rule for is Phantom, as I felt that my instance being on the list would be beneficial as Phantom is still relatively new.</p>
 <h2 id="will-you-ever-add-any-more-servicesfrontends">Will you ever add any more services/frontends?</h2>
-<p>Maybe. As of now I wanted to do a host a few frontends that had either a lack of working instances or already had a bunch of working ones but that I used myself.</p>
+<p>As of now I won&rsquo;t be adding anything.</p>
 <p>If I add anything, it won&rsquo;t be going on the same server for sure, expect the following in the future potentially:</p>
 <ul>
 <li>Rimgo (Imgur frontend)</li>
