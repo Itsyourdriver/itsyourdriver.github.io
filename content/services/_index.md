@@ -12,8 +12,9 @@ Hosted in the US with Oracle. I plan to swap providers in the future, I do not h
 
 ### Notice
 >
-> I will be removing AnonymousOverflow soon, please remove my instance from your redirectors/swap to another instance.
-> Quetre is still showing 503 (ratelimited/blocked) by Quora.
+> Quetre has been blocked for a while, as such I have made the decision to permanently remove it with little notice. This shouldn't happen again, but I felt that it wasn't doing much just sitting there.
+>
+> I have deployed another change to redlib to hopefully fix the issues that have been happening randomly.
 >
 > Deployed some fixes to Redlib and no luck, Redlib may be spotty for the time being. For more reliability use https://lr.ptr.moe/ or https://redlib.orangenet.cc instead.
 >
@@ -25,8 +26,7 @@ Hosted in the US with Oracle. I plan to swap providers in the future, I do not h
 > **WARNING that the above status page is hosted by BetterStack which uses Google Analytics, nothing I can do about it for now until I replace it with something without tracking.**
 
 - [LibreMDb](https://lmdb.driver.fyi) - A frontend for iMDb.
-- [Quetre](https://quetre.driver.fyi) - A frontend for Quora. - Instance is currently blocked. I am working on finding a way around it, no promises for now.
-- [Redlib](https://redlib.driver.fyi) - A frontend for reddit. Using a fork from [here](https://git.ptr.moe/baalajimaestro/redlib) to route traffic through reddit's onion service to prevent blocks (as my server is blocked by reddit due to their insane amounts of pre-emptive blocks on VPN/Datacenter IP addresses)
+- [Redlib](https://redlib.driver.fyi) - A frontend for reddit. Using a fork from [here](https://git.ptr.moe/baalajimaestro/redlib) to route traffic through reddit's onion service to prevent blocks
 - [Phantom](https://phantom.driver.fyi) - A frontend for Fandom.
 
 All are protected by [Anubis](https://anubis.techaro.lol/). I am aware that lower powered devices cannot easily complete Anubis Challenges, unfortunately I am not wanting to deal with bots scraping my instances so you will have to deal with it for now.
