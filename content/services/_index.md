@@ -10,26 +10,18 @@ I host a couple of "alternative frontends" and (soon) other services which are c
 
 Hosted in the US with Oracle. I plan to swap providers in the future, I do not have any ETA on this.
 
-### Notice
->
-> Quetre has been blocked for a while, as such I have made the decision to permanently remove it with little notice. This shouldn't happen again, but I felt that it wasn't doing much just sitting there.
->
-> I have deployed another change to redlib to hopefully fix the issues that have been happening randomly.
->
-> Deployed some fixes to Redlib and no luck, Redlib may be spotty for the time being. For more reliability use https://lr.ptr.moe/ or https://redlib.orangenet.cc instead.
->
-
-
+## UPDATE
+I have a little bit more time at the moment, and as such I more recently just moved a few things around, Redlib MIGHT be more stable, and this website is now accessible over tor. (none of the frontends are yet though)
 
 > Check uptime [here](https://status.driver.fyi/). 
 >
 > **WARNING that the above status page is hosted by BetterStack which uses Google Analytics, nothing I can do about it for now until I replace it with something without tracking.**
 
-- [LibreMDb](https://lmdb.driver.fyi) - A frontend for iMDb.
+- [LibreMDb](https://lmdb.driver.fyi) - A frontend for iMDb. *Currently unavailable due to [this bug](https://github.com/zyachel/libremdb/issues/117).*
 - [Redlib](https://redlib.driver.fyi) - A frontend for reddit. Using a fork from [here](https://git.ptr.moe/baalajimaestro/redlib) to route traffic through reddit's onion service to prevent blocks
 - [Phantom](https://phantom.driver.fyi) - A frontend for Fandom.
 
-All are protected by [Anubis](https://anubis.techaro.lol/). I am aware that lower powered devices cannot easily complete Anubis Challenges, unfortunately I am not wanting to deal with bots scraping my instances so you will have to deal with it for now.
+All are protected by [Anubis](https://anubis.techaro.lol/). Planning on replacing with go-away more than likely as it provides a js-free challenge option.
 
 As of now I am not interested in hosting any more frontends, though I have some I'd like to host in the future ^_^
 
