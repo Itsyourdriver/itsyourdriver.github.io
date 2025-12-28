@@ -10,15 +10,15 @@ I host a couple of "alternative frontends" and (soon) other services which are c
 
 Hosted in the US with Oracle. I plan to swap providers in the future, I do not have any ETA on this.
 
-## UPDATE
-I have a little bit more time at the moment, and as such I more recently just moved a few things around, Redlib MIGHT be more stable, and this website is now accessible over tor. (none of the frontends are yet though)
+## 12/28/25
+> Update: I have retired redlib due to concurrent issues with reddit, it may come back in the future, but not at the moment. I will continue hosting Phantom and plan to have a few new things up in a week or two.
 
 > Check uptime [here](https://status.driver.fyi/). 
 >
 > **WARNING that the above status page is hosted by BetterStack which uses Google Analytics, nothing I can do about it for now until I replace it with something without tracking.**
 
 - [LibreMDb](https://lmdb.driver.fyi) - A frontend for iMDb. *Currently unavailable due to [this bug](https://github.com/zyachel/libremdb/issues/117).*
-- [Redlib](https://redlib.driver.fyi) - A frontend for reddit. Using a fork from [here](https://git.ptr.moe/baalajimaestro/redlib) to route traffic through reddit's onion service to prevent blocks
+- [Redlib](https://redlib.driver.fyi) - **Has been retired and now redirects to a different (probably working) instance as a temporary reminder to stop using my instance.**
 - [Phantom](https://phantom.driver.fyi) - A frontend for Fandom.
 
 All are protected by [Anubis](https://anubis.techaro.lol/). Planning on replacing with go-away more than likely as it provides a js-free challenge option.
