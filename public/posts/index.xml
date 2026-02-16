@@ -5,7 +5,7 @@
     <link>https://itsyourdriver.xyz/posts/</link>
     <description>Recent content in Posts on itsyourdriver.xyz</description>
     <generator>Hugo</generator>
-    <language>en</language>
+    <language>en-us</language>
     <copyright>© 2025 Itsyourdriver</copyright>
     <lastBuildDate>Sun, 28 Dec 2025 15:26:15 -0800</lastBuildDate>
     <atom:link href="https://itsyourdriver.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -14,7 +14,7 @@
       <link>https://itsyourdriver.xyz/posts/tor/</link>
       <pubDate>Sun, 28 Dec 2025 15:26:15 -0800</pubDate>
       <guid>https://itsyourdriver.xyz/posts/tor/</guid>
-      <description>&lt;p&gt;Hello again, we&amp;rsquo;re reaching the new year, and while I do not have much of any updates on my game development project for you as ROBLOX&amp;rsquo;s recent changes regarding who can chat are still making me apprehensive on whether to stay, we will see the effect on playercounts once the update has fully released, even though my game does not use chat.&lt;/p&gt;&#xA;&lt;p&gt;Anyway, here&amp;rsquo;s everything:&lt;/p&gt;&#xA;&lt;h1 id=&#34;this-site-is-now-available-over-tor&#34;&gt;This site is now available over TOR.&lt;/h1&gt;&#xA;&lt;p&gt;I won&amp;rsquo;t provide a link here, but you can find the hidden service URL embedded into each and every page, your TOR browser should pick the url up for you automatically.&#xA;It isn&amp;rsquo;t always kept in sync because I need to setup a custom cronjob to automatically pull the git repo behind this website, but we&amp;rsquo;re almost there haha.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hello again, we&amp;rsquo;re reaching the new year, and while I do not have much of any updates on my game development project for you as ROBLOX&amp;rsquo;s recent changes regarding who can chat are still making me apprehensive on whether to stay, we will see the effect on playercounts once the update has fully released, even though my game does not use chat.&lt;/p&gt;&#xA;&lt;p&gt;Anyway, here&amp;rsquo;s everything:&lt;/p&gt;&#xA;&lt;h1 id=&#34;this-site-is-now-available-over-tor&#34;&gt;This site is now available over TOR.&lt;/h1&gt;&#xA;&lt;h2 id=&#34;edit-tor-url-down-for-forseeable-future-it-was-mostly-broken-anyway&#34;&gt;Edit: tor url down for forseeable future, it was mostly broken anyway.&lt;/h2&gt;&#xA;&lt;p&gt;I won&amp;rsquo;t provide a link here, but you can find the hidden service URL embedded into each and every page, your TOR browser should pick the url up for you automatically.&#xA;It isn&amp;rsquo;t always kept in sync because I need to setup a custom cronjob to automatically pull the git repo behind this website, but we&amp;rsquo;re almost there haha.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Converting my Roblox game to a framework, stupid or insane?</title>

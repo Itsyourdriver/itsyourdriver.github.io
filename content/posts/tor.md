@@ -19,6 +19,7 @@ Hello again, we're reaching the new year, and while I do not have much of any up
 Anyway, here's everything:
 
 # This site is now available over TOR.
+## Edit: tor url down for forseeable future, it was mostly broken anyway.
 
 I won't provide a link here, but you can find the hidden service URL embedded into each and every page, your TOR browser should pick the url up for you automatically.
 It isn't always kept in sync because I need to setup a custom cronjob to automatically pull the git repo behind this website, but we're almost there haha.

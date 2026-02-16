@@ -19,7 +19,7 @@
 
 
   
-  <link rel="stylesheet" href="https://itsyourdriver.xyz/css/terminal.min.c0cfa11cc0eee8ad433947e6b517ba9993a571d9b6e2eb7b08e264ccf4e5bce8.css">
+  <link rel="stylesheet" href="https://itsyourdriver.xyz/css/terminal.min.7b93edb8a5595176aa1553a019eca3a8fc6d53089606f636d4cbb74329eb4e8b.css">
 
   
   <link rel="stylesheet" href="https://itsyourdriver.xyz/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
@@ -245,7 +245,8 @@
 <blockquote>
 <p>⚠️ This guide doesn&rsquo;t go over how to setup support for custom domains (using a reverse proxy), as I still haven&rsquo;t figured it out yet. If you have (using any reverse proxy), please contact me via any platform that I&rsquo;m active on (incl. matrix.org, @itsyourdriver_)</p>
 <p>This guide is made with my own experience of setting this server up, some practices may be bad or just okay. If something is off, let me know.</p>
-<p><strong>You also need a self-hosted forgejo instance for this guide to work.</strong></p></blockquote>
+<p><strong>You also need a self-hosted forgejo instance for this guide to work.</strong></p>
+</blockquote>
 <p>For this guide, I&rsquo;ll be using cloudflare as my DNS provider (to initiate certificates), you can use any of the ones listed <a href="https://go-acme.github.io/lego/dns/#dns-providers">here</a></p>
 <p>This guide will be using a VPS, as my homelab already has ports 80,443 used. You can technically use cloudflare tunnels, provided that you don&rsquo;t want custom domain support.</p>
 <p>To start, SSH into your vps and create a new <code>docker-compose.yaml</code> file.</p>
@@ -282,7 +283,8 @@
 <p>We can then copy the API key (which isn&rsquo;t shown again!) into the <code>&quot;CLOUDFLARE_DNS_API_TOKEN&quot;</code> and <code>&quot;CLOUDFLARE_ZONE_API_TOKEN&quot;</code></p>
 <blockquote>
 <p>⚠️ I highly recommend that you use a .env file instead of putting your variables straight into the docker-compose file.</p>
-<p>As a reminder, this guide simply goes over getting the server up and running as quickly as possible. I will edit it in the future with a guide for the .env</p></blockquote>
+<p>As a reminder, this guide simply goes over getting the server up and running as quickly as possible. I will edit it in the future with a guide for the .env</p>
+</blockquote>
 <p>Then, add your cloudflare account&rsquo;s email into the other variable.</p>
 <p>After that, we are indeed ready to start the server.</p>
 <h1 id="please-make-sure-to-properly-forward-ports-443--80-before-we-continue">Please make sure to properly forward ports 443 &amp; 80 before we continue.<a href="#please-make-sure-to-properly-forward-ports-443--80-before-we-continue" class="hanchor" ariaLabel="Anchor">#</a> </h1>
